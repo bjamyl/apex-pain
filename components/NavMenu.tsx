@@ -1,0 +1,125 @@
+"use client";
+import * as React from "react";
+import Link from "next/link";
+import { Activity, Heart, Phone, Stethoscope } from "lucide-react";
+import { Poppins } from "next/font/google";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
+
+const PoppinsFont = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+
+export function NavMenu() {
+  return (
+    <NavigationMenu className={`${PoppinsFont.className} antialiased bg-defaultGreen`}>
+      <NavigationMenuList>
+        <NavigationMenuItem className="bg-defaultGreen">
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Home
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/awareness" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Awareness
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-defaultGreen">Services</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              <ListItem
+                title="Spinal Cord and Stimulation"
+                href="/services/primary-care"
+              >
+              </ListItem>
+              <ListItem
+                title="Radiofrequency Ablations"
+                href="/services/specialized-treatment"
+              >
+              </ListItem>
+              <ListItem
+                title="Kyphoplasty"
+                href="/services/emergency"
+              >
+              </ListItem>
+              <ListItem
+                title="Epidural Injections"
+                href="/services/wellness"
+              >
+              </ListItem>
+              <ListItem
+                title="Joint Injections"
+                href="/services/wellness"
+              >
+              </ListItem>
+              <ListItem
+                title="Peripheral Nerve Stimulation"
+                href="/services/wellness"
+              >
+              </ListItem>
+              <ListItem
+                title="Sacroiliac Joint Fusion"
+                href="/services/wellness"
+              >
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/contact" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Contact
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+  );
+}
+
+interface ListItemProps extends React.ComponentPropsWithoutRef<"a"> {
+  title: string;
+  icon?: React.ReactNode;
+}
+
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
+  ({ className, title, children, icon, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <a
+            ref={ref}
+            className={cn(
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              className
+            )}
+            {...props}
+          >
+            <div className="flex items-center gap-2 text-sm font-medium leading-none">
+              {icon}
+              {title}
+            </div>
+            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+              {children}
+            </p>
+          </a>
+        </NavigationMenuLink>
+      </li>
+    );
+  }
+);
+ListItem.displayName = "ListItem";
