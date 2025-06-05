@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <div className="xl:hidden">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-100 relative z-50">
+      <header className="bg-white shadow-sm relative z-50">
         <div className="flex items-center justify-between px-4 py-6">
           {/* Logo */}
           <div className="flex items-center">
