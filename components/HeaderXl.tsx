@@ -34,7 +34,7 @@ export function HeaderXl() {
           <NavMenu />
         </div>
         <div className="flex items-center gap-4">
-          <Button className="rounded-md py-6 px-4">
+          <Button className="rounded-md py-6 px-4 bg-white text-black font-semibold">
             Book An Appointment
             <svg
               xmlns="http://www.w3.org/2000/svg"

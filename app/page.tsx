@@ -3,6 +3,7 @@ import React from 'react'
 import { HeaderXl } from '@/components/HeaderXl'
 import HeroSlider from '@/components/HeroSlider'
 import Footer from '@/components/Footer'
+import About from '@/components/About'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header/>
       <HeaderXl/>
       <HeroSlider/>
+      <About/>
       <Footer/>
     </div>
   )
