@@ -117,11 +117,17 @@ export default function Footer() {
 
                 <div className="space-y-4 text-sm">
                   <p>
-                    <strong>Address:</strong> 511 SW 10th Ave 1206, Portland, OR
-                    United States
+                    <strong>Address:</strong> 840 Hammond St. STE 2 Bangor, ME
+                    04401
                   </p>
                   <p>
                     <strong>Support mail:</strong> info@apex-mail.com
+                  </p>
+                  <p>
+                    <strong>Fax:</strong> 1 888-355-6416
+                  </p>
+                  <p>
+                    <strong>Telephone:</strong> 207-830-2739(APEX)
                   </p>
 
                   <Link
@@ -141,12 +147,11 @@ export default function Footer() {
         <div className="border-t border-gray-400 mt-8 py-4 hidden lg:block">
           <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
             <p>
-              
-              <span className="font-semibold">Apex Interventional Pain Specialists</span> © 2025 – All
-              Rights Reserved
+              <span className="font-semibold">
+                Apex Interventional Pain Specialists
+              </span>{" "}
+              © 2025 – All Rights Reserved
             </p>
-
-           
           </div>
         </div>
 
