@@ -87,7 +87,6 @@ export default function ServicesSlider() {
 
   const getItemsPerView = () => {
     if (typeof window !== "undefined") {
-      if (window.innerWidth >= 1280) return 4; // large desktop
       if (window.innerWidth >= 1024) return 3; // desktop
       if (window.innerWidth >= 768) return 2; // tablet
       return 1; // mobile
