@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen my-20">
       {/* Main Content Section */}
       <div className="container mx-auto px-4 py-8 lg:py-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Menu, X, Search, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { RiMenu4Fill } from "react-icons/ri";
 import AccordionMenu from "./AccordionMenu";
 
 export default function Header() {
@@ -30,16 +30,8 @@ export default function Header() {
             <img src={logo} alt="apex-logo" className="h-8" />
           </div>
 
-          {/* Hamburger Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleMenu}
-            className="p-0"
-            aria-label="Toggle menu"
-          >
-            <Menu size={40} className=" text-gray-700" />
-          </Button>
+          {/* Hamburger Menu Button */}     
+            <RiMenu4Fill onClick={toggleMenu} size={40} className=" text-defaultGreen hover:cursor-pointer" />
         </div>
       </header>
 
