@@ -7,26 +7,26 @@ import { Card } from "@/components/ui/card";
 
 export default function About() {
   return (
-    <div className="min-h-screen my-20">
+    <div className="mx-4 my-20 overflow-hidden">
       {/* Main Content Section */}
-      <div className="container mx-auto px-4 py-8 lg:py-16">
+      <div className="max-w-7xl mx-auto py-8 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Side - Images and Stats (Desktop) / Top (Mobile/Tablet) */}
-          <div className="relative order-2 lg:order-1">
+          <div className="relative order-2 lg:order-1 w-full">
             {/* Main Medical Image */}
-            <div className="relative">
+            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[800px] w-full max-w-md mx-auto lg:max-w-none">
               <Image
                 src="/Ammar.jpg"
-                alt="Medical professionals performing surgery"
-                width={600}
-                height={400}
-                className="w-full h-[550px] object-top lg:h-[800px] object-cover rounded-2xl"
+                alt="ammar-mahmoud"
+                fill
+                className="object-top object-cover rounded-2xl"
                 priority
               />
-              {/* Statistics Card */}
-              <Card className="border-none absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-8 bg-defaultGreen text-white py-10 px-6  rounded-2xl  max-w-[280px]">
-                <div className="flex items-center justify-center w-12 h-12  l mb-16">
-                  <svg className="fill-white"
+              {/* Statistics Card - Repositioned to avoid overflow */}
+              <Card className="hidden border-none md:block absolute -bottom-4 -right-2 lg:-bottom-6 lg:-right-4 bg-defaultGreen text-white p-4 lg:p-6 rounded-2xl max-w-[200px] lg:max-w-[280px]">
+                <div className="flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12 mb-4 lg:mb-6">
+                  <svg
+                    className="fill-white w-6 h-6 lg:w-8 lg:h-8"
                     xmlns="http://www.w3.org/2000/svg"
                     id="svg11425"
                     height="512"
@@ -41,10 +41,10 @@ export default function About() {
                     </g>
                   </svg>
                 </div>
-                <div className="xl:text-6xl sm:text-5xl font-bold text-white mb-2">
-                  10<span className="text-2xl">+</span>
+                <div className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2">
+                  10<span className="text-lg lg:text-2xl">+</span>
                 </div>
-                <div className="text-sm sm:text-base font-medium">
+                <div className="text-xs lg:text-sm font-medium leading-tight">
                   Years of Experience
                   <br />
                   in the Medical Field.
@@ -54,17 +54,17 @@ export default function About() {
           </div>
 
           {/* Right Side - Content (Desktop) / Bottom (Mobile/Tablet) */}
-          <div className="order-1 lg:order-2 space-y-6 lg:space-y-8">
+          <div className="order-1 lg:order-2 space-y-4 sm:space-y-6 lg:space-y-8 w-full">
             {/* Main Headline */}
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-defaultGreen leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-defaultGreen leading-tight">
                 Meet the Physician
               </h1>
             </div>
 
             {/* Highlighted Quote */}
-            <div className="border-l-4 border-defaultGreen pl-6 py-2">
-              <p className="md:text-3xl lg:text-4xl xl:text-5xl  sm:text-2xl font-semibold text-defaultGreen">
+            <div className="border-l-4 border-defaultGreen pl-4 sm:pl-6 py-2">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-defaultGreen leading-tight">
                 Ammar Mahmoud
                 <br />
                 M.D., D.ABA, FRCPC
@@ -72,7 +72,7 @@ export default function About() {
             </div>
 
             {/* Description Text */}
-            <div className="space-y-4 text-gray-600 text-base sm:text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed">
               <p>
                 Dr. Mahmoud is a triple board-certified physician in
                 Interventional Pain Medicine and Anesthesiology.
@@ -86,30 +86,8 @@ export default function About() {
                 care.
               </p>
             </div>
-
-            {/* CTA Button */}
-            <div className="pt-4">
-              <Button
-                size="lg"
-                className="bg-defaultGreen hover:bg-green-800 text-white p-8 text-lg group"
-              >
-                Learn More About Dr. Mahmoud
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
           </div>
         </div>
-      </div>
-
-      {/* Scroll to Top Button */}
-      <div className="fixed bottom-8 right-8">
-        <Button
-          size="icon"
-          className="bg-slate-800 hover:bg-slate-700 text-white rounded-full w-12 h-12 shadow-lg"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          <ArrowRight className="w-5 h-5 rotate-[-90deg]" />
-        </Button>
       </div>
     </div>
   );
