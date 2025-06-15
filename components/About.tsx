@@ -23,21 +23,9 @@ export default function About() {
                 className="w-full h-[550px] object-top lg:h-[800px] object-cover rounded-2xl"
                 priority
               />
-
-              {/* Overlaid Monitor Image - Desktop Only */}
-              <div className="hidden lg:block absolute -top-8 -left-8 w-32 h-24">
-                <Image
-                  src="/Ammar.jpg"
-                  alt="Medical monitoring equipment"
-                  width={128}
-                  height={96}
-                  className="w-full h-full object-cover rounded-lg shadow-lg"
-                />
-              </div>
-
               {/* Statistics Card */}
               <Card className="border-none absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-8 bg-defaultGreen text-white py-10 px-6  rounded-2xl  max-w-[280px]">
-                <div className="flex items-center justify-center w-12 h-12  l mb-4">
+                <div className="flex items-center justify-center w-12 h-12  l mb-16">
                   <svg className="fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                     id="svg11425"
@@ -53,7 +41,7 @@ export default function About() {
                     </g>
                   </svg>
                 </div>
-                <div className="text-4xl sm:text-5xl font-bold text-white mb-2">
+                <div className="xl:text-6xl sm:text-5xl font-bold text-white mb-2">
                   10<span className="text-2xl">+</span>
                 </div>
                 <div className="text-sm sm:text-base font-medium">
@@ -75,8 +63,8 @@ export default function About() {
             </div>
 
             {/* Highlighted Quote */}
-            <div className="border-l-4 border-yellow-400 pl-6 py-2">
-              <p className="md:text-2xl lg:text-3xl xl:text-4xl  sm:text-xl font-semibold text-defaultGreen">
+            <div className="border-l-4 border-defaultGreen pl-6 py-2">
+              <p className="md:text-3xl lg:text-4xl xl:text-5xl  sm:text-2xl font-semibold text-defaultGreen">
                 Ammar Mahmoud
                 <br />
                 M.D., D.ABA, FRCPC
@@ -103,7 +91,7 @@ export default function About() {
             <div className="pt-4">
               <Button
                 size="lg"
-                className="bg-defaultGreen hover:bg-green-800 text-white px-8 py-6 text-lg group"
+                className="bg-defaultGreen hover:bg-green-800 text-white p-8 text-lg group"
               >
                 Learn More About Dr. Mahmoud
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { NavMenu } from "./NavMenu";
 
 export function HeaderXl() {
-    const logo = '/apex-logo-white.png'
+    const logo = '/apex-pain-white.png'
   return (
     <header className="w-full hidden xl:block">
       {/* Top bar */}
@@ -24,10 +24,10 @@ export function HeaderXl() {
       </div>
 
       {/* Main navigation */}
-      <div className="flex items-center justify-between bg-defaultGreen p-8 rounded-2xl mx-12 text-white">
+      <div className="flex items-center justify-between bg-defaultGreen px-8 py-2 rounded-2xl mx-12 text-white">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-2">
-            <img src={logo} alt="apex-logo" className="h-10" />
+            <img src={logo} alt="apex-logo" className="h-28" />
 
 
           </Link>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { PhoneCall } from "lucide-react";
 
 export default function ContactCardMain() {
-  const image = "/contact.jpg";
+  const image = "/2149329009.jpg";
   return (
     <div className="border rounded-2xl shadow-md">
       <div className="relative w-full h-[400px] lg:h-[500px] overflow-hidden rounded-t-2xl ">

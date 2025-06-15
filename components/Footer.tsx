@@ -13,7 +13,7 @@ export default function Footer() {
     "Sacroiliac Joint Fusion",
     "Joint Injections",
   ];
-  const logo = "/apex-logo-white.png";
+  const logo = "/apex-pain-white.png";
 
   return (
     <div className="xl:p-14">
@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="lg:col-span-4">
               <div className="flex items-center mb-4">
                 <div className="flex items-center">
-                  <img src={logo} alt="apex-logo" className="h-8" />
+                  <img src={logo} alt="apex-logo" className="h-32" />
                 </div>
               </div>
               <p className="text-sm mb-6">

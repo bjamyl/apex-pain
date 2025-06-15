@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const logo = "/apex.png";
+  const logo = "/apex-dark-logo.png";
   const router = useRouter();
 
   const toggleMenu = () => {
@@ -26,10 +26,10 @@ export default function Header() {
     <div className="xl:hidden">
       {/* Header */}
       <header className="bg-white shadow-sm relative z-50">
-        <div className="flex items-center justify-between px-4 py-6">
+        <div className="flex items-center justify-between px-4 py-2">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="apex-logo" className="h-8" />
+            <img src={logo} alt="apex-logo" className="h-16" />
           </div>
 
           {/* Hamburger Menu Button */}
@@ -58,7 +58,7 @@ export default function Header() {
         {/* Menu Header */}
         <div className="flex items-start justify-between ">
           <div className="flex items-center">
-            <img src={logo} alt="apex-logo" className="h-8 ml-4 mt-6" />
+            <img src={logo} alt="apex-logo" className="h-16 ml-4 mt-6" />
           </div>
 
           {/* Close Button */}
