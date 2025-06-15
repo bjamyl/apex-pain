@@ -55,7 +55,7 @@ export default function HeroSlider() {
           effect="fade"
           fadeEffect={{ crossFade: true }}
           autoplay={{
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           onSwiper={setSwiper}
@@ -84,7 +84,7 @@ export default function HeroSlider() {
                       {/* Header */}
                       <div className="mb-6">
                         <p className="text-sm font-medium text-gray-600 mb-2">
-                          Apex Intervention Pain Specialists
+                          Apex Interventional Pain Specialists
                         </p>
                         <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-defaultGreen leading-tight">
                           {slide.title}

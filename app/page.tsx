@@ -11,14 +11,11 @@ import Testimonials from "@/components/Testimonials";
 export default function Home() {
   return (
     <div>
-      <Header />
-      <HeaderXl />
       <HeroSlider />
       <About />
       <ServicesSection />
       <Location />
      <Testimonials/>
-      <Footer />
     </div>
   );
 }

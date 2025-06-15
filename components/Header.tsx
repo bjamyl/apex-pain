@@ -5,10 +5,12 @@ import { Menu, X, Search, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RiMenu4Fill } from "react-icons/ri";
 import AccordionMenu from "./AccordionMenu";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const logo = "/apex.png";
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -30,8 +32,12 @@ export default function Header() {
             <img src={logo} alt="apex-logo" className="h-8" />
           </div>
 
-          {/* Hamburger Menu Button */}     
-            <RiMenu4Fill onClick={toggleMenu} size={40} className=" text-defaultGreen hover:cursor-pointer" />
+          {/* Hamburger Menu Button */}
+          <RiMenu4Fill
+            onClick={toggleMenu}
+            size={40}
+            className=" text-defaultGreen hover:cursor-pointer"
+          />
         </div>
       </header>
 
@@ -67,7 +73,6 @@ export default function Header() {
         </div>
 
         {/* Navigation Menu */}
-        {/* Navigation Menu */}
         <nav className="flex-1 overflow-y-auto mt-16 mx-2">
           <div className="py-2">
             {/* Regular Menu Items */}
@@ -76,8 +81,7 @@ export default function Header() {
                 key={index}
                 className="w-full flex items-center px-6 text-left hover:bg-gray-50 transition-colors duration-200 text-gray-700 text-base font-medium"
                 onClick={() => {
-                  // Handle navigation here
-                  console.log(`Navigate to ${item.href}`);
+                  router.push(item.href);
                   toggleMenu();
                 }}
               >
