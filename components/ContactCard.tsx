@@ -90,14 +90,14 @@ export default function ContactForm() {
                   </div>
                 </div>
 
-                {/* Contact With Us */}
+                {/* Contact Us */}
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-defaultGreen">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="text-lg font-semibold text-defaultGreen">
-                      Contact With Us
+                      Contact Us
                     </h3>
                   </div>
                   <div className="ml-15 space-y-1 text-slate-600">
