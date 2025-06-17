@@ -43,37 +43,37 @@ export function NavMenu() {
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               <ListItem
                 title="Spinal Cord and Stimulation"
-                href="/services/primary-care"
+                href="/services"
               >
               </ListItem>
               <ListItem
                 title="Radiofrequency Ablations"
-                href="/services/specialized-treatment"
+                href="/services"
               >
               </ListItem>
               <ListItem
                 title="Kyphoplasty"
-                href="/services/emergency"
+                href="/services"
               >
               </ListItem>
               <ListItem
                 title="Epidural Injections"
-                href="/services/wellness"
+                href="/services"
               >
               </ListItem>
               <ListItem
                 title="Joint Injections"
-                href="/services/wellness"
+                href="/services"
               >
               </ListItem>
               <ListItem
                 title="Peripheral Nerve Stimulation"
-                href="/services/wellness"
+                href="/services"
               >
               </ListItem>
               <ListItem
                 title="Sacroiliac Joint Fusion"
-                href="/services/wellness"
+                href="/services"
               >
               </ListItem>
             </ul>

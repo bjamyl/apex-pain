@@ -1,14 +1,7 @@
+import { Video } from "@/constants/services";
 import { VideoCard } from "./VideoCard";
 
-interface Video {
-  id: number;
-  title: string;
-  description: string;
-  thumbnail: string;
-  videoUrl: string;
-  duration: string;
-  category: string;
-}
+
 
 interface VideoGalleryProps {
   videos: Video[];

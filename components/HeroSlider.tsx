@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 // Swiper components and styles
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +11,8 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
 import "swiper/css/effect-fade";
-import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const slides = [
   {
@@ -22,6 +22,7 @@ const slides = [
     description:
       "With advanced fellowship training from Cleveland Clinic, we brings cutting-edge techniques to provide lasting relief for patients suffering from chronic pain conditions.",
     buttonText: "View All Services",
+    link: "/services"
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ const slides = [
     description:
       "Our experts combine their extensive training with a compassionate approach to develop customized treatment plans for each patient's unique needs.",
     buttonText: "View All Services",
+    link:"/services"
   },
   {
     id: 3,
@@ -37,7 +39,8 @@ const slides = [
     title: "Advanced Surgical Interventions",
     description:
       "Specializing in minimally invasive procedures, we offer state-of-the-art surgical solutions for complex pain conditions.",
-    buttonText: "Explore Facilities",
+    buttonText: "Get In Touch",
+    link:"/contact"
   },
 ];
 
@@ -97,10 +100,10 @@ export default function HeroSlider() {
                       </p>
 
                       {/* CTA Button */}
-                      <Button className="bg-defaultGreen hover:bg-green-950 text-white p-6 rounded-lg font-medium inline-flex items-center gap-2 transition-all duration-200">
+                      <Link href={slide.link} className="bg-defaultGreen hover:bg-green-950 text-white p-4 rounded-lg font-medium inline-flex items-center gap-2 transition-all duration-200">
                         {slide.buttonText}
-                        <ArrowRight className="w-4 h-4" />
-                      </Button>
+                        <FaArrowRightLong className="w-4 h-4" />
+                      </Link>
                     </div>
                   </div>
                 </div>

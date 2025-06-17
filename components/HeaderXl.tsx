@@ -3,6 +3,7 @@ import { Mail, MapPin } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { NavMenu } from "./NavMenu";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export function HeaderXl() {
     const logo = '/apex-pain-white.png'
@@ -34,23 +35,9 @@ export function HeaderXl() {
           <NavMenu />
         </div>
         <div className="flex items-center gap-4">
-          <Button className="rounded-md py-6 px-4 bg-white text-black font-semibold">
+          <Button className="rounded-md py-6 px-4 hover:bg-slate-50 transition-colors bg-white text-black font-semibold">
             Book An Appointment
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="ml-2 h-4 w-4"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
+           <FaArrowRightLong/>
           </Button>
         </div>
       </div>

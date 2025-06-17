@@ -6,7 +6,7 @@ import { GiPelvisBone } from "react-icons/gi";
 import { GiBackboneShell } from "react-icons/gi";
 
 // Types
-interface Video {
+export interface Video {
   id: number;
   title: string;
   description: string;

@@ -6,16 +6,9 @@ import { Play, Clock, Tag } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { VideoModal } from "./VideoModal"
+import { Video } from "@/constants/services"
 
-interface Video {
-  id: number
-  title: string
-  description: string
-  thumbnail: string
-  videoUrl: string
-  duration: string
-  category: string
-}
+
 
 interface VideoCardProps {
   video: Video

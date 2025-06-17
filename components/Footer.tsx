@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Send, ArrowUp } from "lucide-react";
+import { Facebook, Send, ArrowUp, } from "lucide-react";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 export default function Footer() {
   const services = [
@@ -62,7 +64,7 @@ export default function Footer() {
                 {services.map((service, index) => (
                   <li key={index}>
                     <Link
-                      href="#"
+                      href="/services"
                       className="hover:text-[#f0c14b] transition-colors"
                     >
                       {service}
@@ -77,7 +79,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="#"
+                    href="/"
                     className="hover:text-[#f0c14b] transition-colors"
                   >
                     Home
@@ -85,7 +87,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/awareness"
                     className="hover:text-[#f0c14b] transition-colors"
                   >
                     Awareness
@@ -93,7 +95,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/services"
                     className="hover:text-[#f0c14b] transition-colors"
                   >
                     Services
@@ -101,7 +103,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/contact"
                     className="hover:text-[#f0c14b] transition-colors"
                   >
                     Contact
@@ -113,7 +115,7 @@ export default function Footer() {
             {/* Contact With Us - Full width on mobile, right side on tablet and desktop */}
             <div className="lg:col-span-4 md:mt-0 mt-8">
               <div className="bg-white text-defaultGreen p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Contact With Us!</h3>
+                <h3 className="text-xl font-bold mb-4">Contact Us!</h3>
 
                 <div className="space-y-4 text-sm">
                   <p>
@@ -131,11 +133,11 @@ export default function Footer() {
                   </p>
 
                   <Link
-                    href="#"
-                    className="bg-defaultGreen text-white py-3 px-6 rounded flex items-center justify-center hover:bg-[#152a45] transition-colors"
+                    href="/contact"
+                    className="bg-defaultGreen text-white py-3 px-6 rounded flex items-center justify-center hover:bg-green-950 transition-colors"
                   >
-                    Request An Appointment
-                    <span className="ml-2">→</span>
+                    Request An Appointment 
+                     <FaArrowRightLong className="ml-3" />
                   </Link>
                 </div>
               </div>

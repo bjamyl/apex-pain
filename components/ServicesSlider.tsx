@@ -1,89 +1,31 @@
 "use client";
 import React, { useState } from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import ServiceCard from "./ServiceCard";
-import { GiJoint, GiScalpel } from "react-icons/gi";
-import { FaSyringe } from "react-icons/fa";
-import { SiSpine } from "react-icons/si";
-import { LuBrainCircuit } from "react-icons/lu";
-import { GiPelvisBone } from "react-icons/gi";
-import { GiBackboneShell } from "react-icons/gi";
+import { servicesData, Video, videoData } from "@/constants/services";
+import { ServicesCard } from "./Services/ServicesCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
- const services = [
-  {
-    title: "Joint Injections",
-    description:
-      "Delivers medication directly into joints, reducing inflammation and relieving pain from conditions like arthritis.",
-    icon: <GiJoint size={40} className="text-2xl" />,
-    link: "/services/joint-injections",
-    image: "/services/injections.jpg",
-    imageAlt: "joint-injections",
-  },
-  {
-    title: "Radiofrequency Ablation",
-    description:
-      "A minimally invasive procedure that uses heat from radio waves to target and destroy nerve tissue responsible for transmitting pain, often used for conditions like arthritis or chronic back pain.",
-    icon: <GiScalpel size={40} className="text-2xl " />,
-    image: "/services/radiofrequency.jpg",
-    link: "/services/joint-injections",
-    imageAlt: "radiofrequency-ablation",
-  },
-  {
-    title: "Epidural Injections",
-    description:
-      "Delivers medication directly to the spine, reducing inflammation and providing pain relief for neck and back pain.",
-    icon: <FaSyringe size={40} className="text-2xl" />,
-    image: "/services/epidural-injection.jpg",
-    imageAlt: "epidural-injection",
-    link: "/services/joint-injections",
-  },
-  {
-    title: "Spinal Cord Stimulation",
-    description:
-      "A treatment for chronic pain that involves implanting a small device near the spinal cord to send electrical impulses, which block pain signals from reaching the brain",
-    icon: <SiSpine size={40} className="text-2xl " />,
-    image: "/services/scs.jpg",
-    imageAlt: "spinal-cord-stimulation",
-    link: "/services/joint-injections",
-  },
-  {
-    title: "Peripheral Nerve Stimulation",
-    description:
-      "Delivers electrical impulses to specific nerves, interrupting pain signals and offering relief for chronic pain conditions",
-    icon: <LuBrainCircuit size={40} className="text-2xl" />,
-    image: "/services/pns.jpg",
-    imageAlt: "peripheral-nerve-stimulation",
-    link: "/services/joint-injections",
-  },
-  {
-    title: "Kyphoplasty",
-    description:
-      "A minimally invasive surgery used to treat vertebral compression fractures, where a balloon is inflated inside a fractured vertebra and then filled with cement to stabilize the bone and relieve pain",
-    icon: <GiBackboneShell size={40} className="text-2xl" />,
-    image: "/services/kyphoplasty.jpg",
-    imageAlt: "kyphoplasty",
-    link: "/services/joint-injections",
-  },
-  {
-    title: "Sacroiliac Joint Injections",
-    description:
-      "A surgical procedure to fuse the sacroiliac joints (where the spine meets the pelvis) to reduce pain caused by joint instability or degeneration.",
-    icon: <GiPelvisBone size={40} className="text-2xl" />,
-    image: "/services/sac-injections.jpg",
-    imageAlt: "sacroiliac-joint-injections",
-    link: "/services/joint-injections",
-  },
-];
+import { VideoModal } from "./VideoModal";
 
 export default function ServicesSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const findVideoById = (id: number) => {
+    return videoData.find((video) => video.id === id);
+  };
+
+  const handleVideoClick = (videoId: number) => {
+    const video = findVideoById(videoId);
+    if (video) {
+      setSelectedVideo(video);
+      setIsModalOpen(true);
+    }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedVideo(null);
+  };
 
   const getItemsPerView = () => {
     if (typeof window !== "undefined") {
@@ -96,7 +38,7 @@ export default function ServicesSlider() {
 
   const [itemsPerView, setItemsPerView] = useState(getItemsPerView());
 
-  const maxIndex = Math.max(0, services.length - itemsPerView);
+  const maxIndex = Math.max(0, servicesData.length - itemsPerView);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
@@ -139,24 +81,34 @@ export default function ServicesSlider() {
               transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
             }}
           >
-            {services.map((service, i) => {
+            {servicesData.map((service, i) => {
               return (
                 <div
                   key={i}
                   className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"
                 >
-                  <ServiceCard
-                    title={service.title}
+                  <ServicesCard
+                    isHome={true}
+                    key={service.title}
                     description={service.description}
                     icon={service.icon}
-                    link={service.link}
+                    title={service.title}
                     image={service.image}
-                    imageAlt={service.title}
+                    imageAlt={service.imageAlt}
+                    videoId={service.videoId}
+                    onWatchVideo={handleVideoClick}
                   />
                 </div>
               );
             })}
           </div>
+          {selectedVideo && (
+            <VideoModal
+              video={selectedVideo}
+              isOpen={isModalOpen}
+              onClose={closeModal}
+            />
+          )}
         </div>
 
         {/* Mobile Navigation - Bottom Arrows and Dots */}
@@ -171,7 +123,7 @@ export default function ServicesSlider() {
             </button>
 
             <div className="flex gap-2">
-              {Array.from({ length: services.length }, (_, index) => (
+              {Array.from({ length: servicesData.length }, (_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}

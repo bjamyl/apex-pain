@@ -4,16 +4,9 @@ import { useEffect, useRef } from "react"
 import { X } from "lucide-react"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
+import { Video } from "@/constants/services"
 
-interface Video {
-  id: number
-  title: string
-  description: string
-  thumbnail: string
-  videoUrl: string
-  duration: string
-  category: string
-}
+
 
 interface VideoModalProps {
   video: Video

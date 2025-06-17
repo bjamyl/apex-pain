@@ -14,17 +14,17 @@ export default function AccordionMenu({ toggleMenu }: AccordionProps) {
   const serviceItems = [
     {
       name: "Spinal Cord and Stimulation",
-      href: "/services/spinal-cord-stimulation",
+      href: "/services",
     },
     {
       name: "Radiofrequency Ablations",
-      href: "/services/radiofrequency-ablations",
+      href: "/services",
     },
-    { name: "Kyphoplasty", href: "/services/kyphoplasty" },
-    { name: "Epidural Injections", href: "/services/epidural-injections" },
-    { name: "Joint Injections", href: "/services/epidural-injections" },
-    { name: "Peripheral Nerve Stimulation", href: "/services/epidural-injections" },
-    { name: "Sacroiliac Joint Fusion", href: "/services/epidural-injections" },
+    { name: "Kyphoplasty", href: "/services" },
+    { name: "Epidural Injections", href: "/services" },
+    { name: "Joint Injections", href: "/services" },
+    { name: "Peripheral Nerve Stimulation", href: "/services" },
+    { name: "Sacroiliac Joint Fusion", href: "/services" },
   ];
   return (
     <Accordion type="single" collapsible className="w-full">

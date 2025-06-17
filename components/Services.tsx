@@ -1,6 +1,7 @@
 import React from "react";
-import { Button } from "./ui/button";
 import ServicesSlider from "./ServicesSlider";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Services() {
   return (
@@ -15,7 +16,13 @@ export default function Services() {
               We provide several intervention pain services in Bangor
             </p>
           </div>
-          <Button className="bg-defaultGreen">View All Services</Button>
+          <Link
+            href='/services'
+            className="bg-defaultGreen hover:bg-green-950 text-white p-4 rounded-lg font-medium inline-flex items-center gap-2 transition-all duration-200"
+          >
+            View All Services
+            <FaArrowRightLong className="w-4 h-4" />
+          </Link>{" "}
         </div>
         <ServicesSlider />
       </div>

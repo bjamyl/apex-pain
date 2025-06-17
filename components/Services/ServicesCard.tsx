@@ -14,6 +14,7 @@ interface ServicesCardProps {
   imageAlt?: string;
   videoId?: number;
   onWatchVideo?: (videoId: number) => void;
+  isHome: boolean;
 }
 
 export function ServicesCard({
@@ -23,6 +24,7 @@ export function ServicesCard({
   image,
   imageAlt,
   videoId,
+  isHome,
   onWatchVideo,
 }: ServicesCardProps) {
   const handleClick = () => {
@@ -52,12 +54,19 @@ export function ServicesCard({
         </h3>
         <p className="text-slate-500">{description}</p>
         <div className="flex items-center justify-between mt-5">
-          <Link
-            href="/contact"
-            className="text-base text-slate-500 flex items-center gap-2"
-          >
-            Get In Touch <FaArrowRightLong />
-          </Link>
+          {isHome ? (
+            <Link href='/services' className="text-base text-slate-500 flex items-center gap-2">
+              Learn More <FaArrowRightLong />
+            </Link>
+          ) : (
+            <Link
+              href="/contact"
+              className="text-base text-slate-500 flex items-center gap-2"
+            >
+              Get In Touch <FaArrowRightLong />
+            </Link>
+          )}
+
           {videoId && (
             <Button variant="ghost" className="p-6" onClick={handleClick}>
               <div className="p-3 rounded-full bg-defaultGreen">

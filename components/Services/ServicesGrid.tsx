@@ -1,18 +1,11 @@
 "use client";
 import { useState } from "react";
-import { servicesData, videoData } from "@/constants/services";
+import { servicesData, Video, videoData } from "@/constants/services";
 import { ServicesCard } from "./ServicesCard";
 import HeaderCard from "../HeaderCard";
 import { VideoModal } from "../VideoModal";
-interface Video {
-  id: number;
-  title: string;
-  description: string;
-  thumbnail: string;
-  videoUrl: string;
-  duration: string;
-  category: string;
-}
+
+
 
 export default function ServicesGrid() {
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
@@ -51,6 +44,7 @@ export default function ServicesGrid() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-6 xl:gap-8 mt-10">
         {servicesData.map((service) => (
           <ServicesCard
+            isHome={false}
             key={service.title}
             description={service.description}
             icon={service.icon}
