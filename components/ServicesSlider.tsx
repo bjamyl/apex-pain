@@ -16,7 +16,7 @@ import { GiPelvisBone } from "react-icons/gi";
 import { GiBackboneShell } from "react-icons/gi";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const services = [
+ const services = [
   {
     title: "Joint Injections",
     description:

@@ -4,7 +4,7 @@ import ServicesSlider from "./ServicesSlider";
 
 export default function Services() {
   return (
-    <section className="xl:mx-16 ">
+    <section className="xl:mx-16">
       <div className="px-4 xl:px-52 py-20 xl:py-32 bg-gray-100 xl:rounded-3xl">
         <div className="md:flex  md:justify-between md:items-center">
           <div className="">
