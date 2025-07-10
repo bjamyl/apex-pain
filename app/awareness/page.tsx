@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Awareness() {
   return (
-    <div className="p-4 xl:px-12">
+    <div className="p-4 xl:px-12 bg-slate-100">
       <HeaderCard
         title="Awareness"
         image="/14944.jpg"

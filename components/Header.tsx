@@ -25,11 +25,11 @@ export default function Header() {
   return (
     <div className="xl:hidden">
       {/* Header */}
-      <header className="bg-white shadow-sm relative z-50">
+      <header className="bg-slate-100 shadow-sm relative z-50">
         <div className="flex items-center justify-between px-4 py-2">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="apex-logo" className="h-16" />
+            <img src={logo} alt="apex-logo" className="h-20" />
           </div>
 
           {/* Hamburger Menu Button */}
@@ -51,14 +51,14 @@ export default function Header() {
 
       {/* Sliding Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-full md:w-80 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full w-full md:w-80 bg-slate-100 z-50 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         {/* Menu Header */}
         <div className="flex items-start justify-between ">
           <div className="flex items-center">
-            <img src={logo} alt="apex-logo" className="h-16 ml-4 mt-6" />
+            <img src={logo} alt="apex-logo" className="h-20 ml-4 mt-6" />
           </div>
 
           {/* Close Button */}

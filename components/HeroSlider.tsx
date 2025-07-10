@@ -17,7 +17,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const slides = [
   {
     id: 1,
-    image: "/slider/1.jpg",
+    image: "/slider/slide1.jpg",
     title: "Expert Pain Management Solutions",
     description:
       "With advanced fellowship training from Cleveland Clinic, we brings cutting-edge techniques to provide lasting relief for patients suffering from chronic pain conditions.",
@@ -26,7 +26,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/slider/2.jpg",
+    image: "/slider/slide2.jpg",
     title: "Expert Medical Professionals. Personalized Treatment.",
     description:
       "Our experts combine their extensive training with a compassionate approach to develop customized treatment plans for each patient's unique needs.",
@@ -35,7 +35,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/slider/3.jpg",
+    image: "/slider/slide3.jpg",
     title: "Advanced Surgical Interventions",
     description:
       "Specializing in minimally invasive procedures, we offer state-of-the-art surgical solutions for complex pain conditions.",
@@ -83,7 +83,7 @@ export default function HeroSlider() {
                 <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
                   <div className="max-w-2xl">
                     {/* Content Box */}
-                    <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-2xl">
+                    <div className="bg-slate-100 opacity-80 rounded-2xl p-8 lg:p-12 shadow-2xl">
                       {/* Header */}
                       <div className="mb-6">
                         <p className="text-sm font-medium text-gray-600 mb-2">

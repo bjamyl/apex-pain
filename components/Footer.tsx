@@ -18,7 +18,7 @@ export default function Footer() {
   const logo = "/apex-pain-white.png";
 
   return (
-    <div className="xl:p-14">
+    <div className="xl:p-14 bg-gray-100">
       <footer className="bg-defaultGreen xl:pt-8 xl:pb-4 text-gray-300 xl:rounded-xl">
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
@@ -114,8 +114,8 @@ export default function Footer() {
 
             {/* Contact With Us - Full width on mobile, right side on tablet and desktop */}
             <div className="lg:col-span-4 md:mt-0 mt-8">
-              <div className="bg-white text-defaultGreen p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Contact Us!</h3>
+              <div className="bg-slate-100 text-defaultGreen p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-4">Contact Us</h3>
 
                 <div className="space-y-4 text-sm">
                   <p>
