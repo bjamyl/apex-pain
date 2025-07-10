@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
+import MapEmbed from "./MapEmbed";
 
 export default function Location() {
   const image = "/medicalcenter.jpg";
@@ -22,11 +23,12 @@ export default function Location() {
             Located at <br className="md:hidden" /> Percy Medical Center.
           </p>
           <Link
-            href="/location"
-            className="flex items-center gap-2 mt-5 lg:text-lg underline w-fit"
+            href="https://www.percymedical.com/"
+            className="flex items-center gap-2 my-5 lg:my-6 lg:text-lg underline w-fit"
           >
             Percy Medical Center
           </Link>
+          <MapEmbed/>
         </div>
       </div>
     </section>

@@ -25,6 +25,12 @@ const poppinsFont = Poppins({
 export const metadata: Metadata = {
   title: "Apex Interventional Pain Specialists",
   description: "The path to pain relief is next door",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "64x64" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -34,9 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppinsFont.className} antialiased`}
-      >
+      <body className={`${poppinsFont.className} antialiased`}>
         <Header />
         <HeaderXl />
         {children}
