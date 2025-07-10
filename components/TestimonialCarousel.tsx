@@ -1,10 +1,31 @@
 "use client";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import testimonials from "@/constants/testimonials.json"; // Adjust the import path as necessary
+import testimonials from "@/constants/testimonials.json"; // Assuming you have a JSON file with testimonials data
 
 
+
+// Avatar component mock
+type AvatarProps = {
+  className?: string;
+  children: React.ReactNode;
+};
+
+const Avatar = ({ className, children }: AvatarProps) => (
+  <div className={`rounded-full overflow-hidden ${className}`}>
+    {children}
+  </div>
+);
+
+const AvatarImage = ({ src, alt }: { src: string; alt: string }) => (
+  <img src={src} alt={alt} className="w-full h-full object-cover" />
+);
+
+const AvatarFallback = ({ className, children }: { className?: string; children: React.ReactNode }) => (
+  <div className={`flex items-center justify-center w-full h-full ${className}`}>
+    {children}
+  </div>
+);
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -94,9 +115,11 @@ export default function TestimonialCarousel() {
     if (isAnimating) return;
     setIsAnimating(true);
     setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? maxIndex : prevIndex - 1
-      );
+      setCurrentIndex((prevIndex) => {
+        // Move by itemsPerView instead of 1
+        const newIndex = prevIndex - itemsPerView;
+        return newIndex < 0 ? Math.max(0, maxIndex) : newIndex;
+      });
       setIsAnimating(false);
     }, 150);
   };
@@ -105,9 +128,11 @@ export default function TestimonialCarousel() {
     if (isAnimating) return;
     setIsAnimating(true);
     setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === maxIndex ? 0 : prevIndex + 1
-      );
+      setCurrentIndex((prevIndex) => {
+        // Move by itemsPerView instead of 1
+        const newIndex = prevIndex + itemsPerView;
+        return newIndex > maxIndex ? 0 : newIndex;
+      });
       setIsAnimating(false);
     }, 150);
   };
@@ -117,6 +142,10 @@ export default function TestimonialCarousel() {
       ...testimonial,
       text: testimonial.text ?? "",
     }));
+
+  // Calculate total pages based on itemsPerView
+  const totalPages = Math.ceil(testimonials.length / itemsPerView);
+  const currentPage = Math.floor(currentIndex / itemsPerView);
 
   return (
     <div className="max-w-7xl mx-auto px-4">
@@ -162,19 +191,19 @@ export default function TestimonialCarousel() {
 
         {/* Progress indicator */}
         <div className="flex justify-center mt-6 gap-2">
-          {Array.from({ length: maxIndex + 1 }, (_, index) => (
+          {Array.from({ length: totalPages }, (_, pageIndex) => (
             <div
-              key={index}
+              key={pageIndex}
               className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                index === currentIndex
+                pageIndex === currentPage
                   ? "bg-gray-500 scale-125"
                   : "bg-gray-400 hover:bg-gray-350"
               }`}
               onClick={() => {
-                if (!isAnimating && index !== currentIndex) {
+                if (!isAnimating && pageIndex !== currentPage) {
                   setIsAnimating(true);
                   setTimeout(() => {
-                    setCurrentIndex(index);
+                    setCurrentIndex(pageIndex * itemsPerView);
                     setIsAnimating(false);
                   }, 150);
                 }
