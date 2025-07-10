@@ -34,7 +34,7 @@ export function ServicesCard({
   };
 
   return (
-    <div className="border p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
+    <div className="border-gray-400 border p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
       <div className="relative h-[300px] w-full overflow-hidden rounded-2xl">
         {image && (
           <Image

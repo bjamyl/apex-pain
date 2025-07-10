@@ -65,7 +65,7 @@ export default function Header() {
           <Button
             size="icon"
             onClick={toggleMenu}
-            className="bg-gray-100 rounded-none shadow-none"
+            className="bg-gray-300 rounded-none shadow-none"
             aria-label="Close menu"
           >
             <X className="" size={20} color="black" />

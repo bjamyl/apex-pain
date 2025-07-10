@@ -20,7 +20,7 @@ const slides = [
     image: "/slider/slide1.jpg",
     title: "Expert Pain Management Solutions",
     description:
-      "With advanced fellowship training from Cleveland Clinic, we brings cutting-edge techniques to provide lasting relief for patients suffering from chronic pain conditions.",
+      "With advanced fellowship training from Cleveland Clinic, we bring cutting-edge techniques to provide lasting relief for patients suffering from chronic pain conditions.",
     buttonText: "View All Services",
     link: "/services"
   },

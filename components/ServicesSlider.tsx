@@ -60,14 +60,14 @@ export default function ServicesSlider() {
           <button
             onClick={prevSlide}
             disabled={currentIndex === 0}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 w-12 h-12 bg-defaultGreen  disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 w-12 h-12 bg-defaultGreen  disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button
             onClick={nextSlide}
             disabled={currentIndex >= maxIndex}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 w-12 h-12 bg-defaultGreen  disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 w-12 h-12 bg-defaultGreen  disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
@@ -117,7 +117,7 @@ export default function ServicesSlider() {
             <button
               onClick={prevSlide}
               disabled={currentIndex === 0}
-              className="w-10 h-10 bg-defaultGreen disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
+              className="w-10 h-10 bg-defaultGreen disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -128,7 +128,7 @@ export default function ServicesSlider() {
                   key={index}
                   onClick={() => goToSlide(index)}
                   className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentIndex ? "bg-defaultGreen" : "bg-gray-300"
+                    index === currentIndex ? "bg-defaultGreen" : "bg-gray-400"
                   }`}
                 />
               ))}
@@ -137,7 +137,7 @@ export default function ServicesSlider() {
             <button
               onClick={nextSlide}
               disabled={currentIndex >= maxIndex}
-              className="w-10 h-10 bg-defaultGreen disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
+              className="w-10 h-10 bg-defaultGreen disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-colors"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

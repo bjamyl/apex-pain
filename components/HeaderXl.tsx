@@ -10,7 +10,7 @@ export function HeaderXl() {
   return (
     <header className="w-full hidden xl:block">
       {/* Top bar */}
-      <div className="flex items-center justify-between bg-gray-100 py-4 px-20 ">
+      <div className="flex items-center justify-between bg-gray-300 py-4 px-20 ">
         <div className="flex flex-col gap-1 md:flex-row md:items-center md:gap-6">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Mail className="h-4 w-4" />
@@ -28,7 +28,7 @@ export function HeaderXl() {
       </div>
 
       {/* Main navigation */}
-      <div className="px-12 bg-slate-100">
+      <div className="px-12 bg-gray-300">
         <div className="flex items-center justify-between bg-defaultGreen px-8 py-2 rounded-2xl  text-white">
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2">

@@ -38,7 +38,7 @@ export default function PartnersMarquee() {
   return (
     <div className="py-10  md:py-20 xl:py-24 mx-4 md:mx-8 xl:mx-12">
       <div className="mb-10 lg:mb-12 xl:mb-20">
-        <h2 className="text-3xl md:text-4xl font-semibold text-defaultGreen text-center ">AFFILITIATIONS -Dr. Ammar Mahmoud</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-defaultGreen text-center ">AFFILITIATIONS -Dr. Ammar Mahmoud</h2>
       </div>
       <Marquee pauseOnHover pauseOnClick>
         {logos &&

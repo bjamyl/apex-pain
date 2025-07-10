@@ -6,10 +6,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 export default function Services() {
   return (
     <section className="xl:mx-16">
-      <div className="px-4 xl:px-52 py-20 xl:py-32 bg-gray-100 border-2 xl:rounded-3xl">
+      <div className="px-4 xl:px-52 py-20 xl:py-32 bg-gray-300 border-2 border-gray-400 xl:rounded-3xl">
         <div className="md:flex  md:justify-between md:items-center">
           <div className="">
-            <h3 className="text-3xl md:text-4xl font-semibold text-defaultGreen">
+            <h3 className="text-3xl md:text-4xl font-bold text-defaultGreen">
               Our Practice Areas and Expertise
             </h3>
             <p className="my-5 md:mb-0 text-slate-500">
