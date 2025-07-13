@@ -1,5 +1,7 @@
 import React from 'react'
 import type { Metadata } from "next";
+import {  Outfit } from "next/font/google";
+
 
 export const metadata: Metadata = {
   title: "Dr. Vishal Patel - Apex Interventional Pain Specialists",
@@ -7,9 +9,14 @@ export const metadata: Metadata = {
 
 };
 
+const PoppinsFont = Outfit({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+
 export default function VishalPatelLayout({children}: {children: React.ReactNode}) {
   return (
-    <div>
+    <div className={`${PoppinsFont.className} antialiased `}>
         {children}
     </div>
   )

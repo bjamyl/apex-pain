@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "./ui/button";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import MapEmbed from "./MapEmbed";
@@ -26,7 +25,7 @@ export default function Location() {
             href="https://www.percymedical.com/"
             className="flex items-center gap-2 my-5 lg:my-6 lg:text-lg underline w-fit"
           >
-            Percy Medical Center
+            Percy Medical Center <FaArrowRightLong className="ml-3" />
           </Link>
           <MapEmbed/>
         </div>

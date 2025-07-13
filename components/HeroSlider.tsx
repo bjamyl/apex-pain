@@ -100,7 +100,7 @@ export default function HeroSlider() {
                       </p>
 
                       {/* CTA Button */}
-                      <Link href={slide.link} className="bg-defaultGreen hover:bg-green-950 text-white p-4 rounded-lg font-medium inline-flex items-center gap-2 transition-all duration-200">
+                      <Link href={slide.link} className="bg-defaultGreen hover:bg-green-950 text-white p-4 rounded-none font-medium inline-flex items-center gap-2 transition-all duration-200">
                         {slide.buttonText}
                         <FaArrowRightLong className="w-4 h-4" />
                       </Link>

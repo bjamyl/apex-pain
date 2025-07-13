@@ -1,8 +1,7 @@
 "use client";
 import * as React from "react";
 import Link from "next/link";
-import { Activity, Heart, List, Phone, Stethoscope } from "lucide-react";
-import { Poppins } from "next/font/google";
+import { Poppins, Outfit } from "next/font/google";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,7 +13,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
-const PoppinsFont = Poppins({
+const PoppinsFont = Outfit({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
@@ -71,7 +70,7 @@ export function NavMenu() {
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               <ListItem
-                title="Spinal Cord and Stimulation"
+                title="Spinal Cord Stimulation"
                 href="/services"
               ></ListItem>
               <ListItem

@@ -1,43 +1,48 @@
-import Header from "@/components/Header";
 import React from "react";
-import { HeaderXl } from "@/components/HeaderXl";
 import HeroSlider from "@/components/HeroSlider";
-import Footer from "@/components/Footer";
+import {  Outfit } from "next/font/google";
+
 import ServicesSection from "@/components/Services";
 import Location from "@/components/Location";
 import Testimonials from "@/components/Testimonials";
 import PartnersMarquee from "@/components/PartnersMarquee";
 import { PhysiciansShowcase } from "@/components/PhysiciansShowcase";
+import { title } from "process";
+
+const PoppinsFont = Outfit({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 export default function Home() {
   const physicians = [
   {
-    id: "1",
     image: "/Ammar.jpg",
-    name: "Ammar Mahmoud, MD, D. ABA, FRCPC",
-    title: "Pain Specialist",
+    name: "Ammar Mahmoud",
+    link: "dr-ammar-mahmoud",
+    title: "M.D., D.ABA, FRCPC",
     description:
       "Dr. Mahmoud is a triple board-certified interventional pain specialist with fellowship training at Cleveland Clinic Foundation. He specializes in advanced, evidence-based pain treatment.",
   },
   {
-    id: "2",
     image: "/new/mansoor.jpg",
-    name: "Mansoor Aman, MD, D. ABA",
-    title: "Pain Specialist",
+    name: "Mansoor Aman",
+    title: "M.D., D. ABA",
+    link: "dr-mansoor-aman",
     description:
       "Dr. Aman is a double board-certified interventional pain specialist with fellowship training at Harvard Medical School. He focuses on innovative pain relief solutions to restore mobility and improve quality of life.",
   },
   {
-    id: "3",
     image: "/new/patel.jpg",
-    name: "Vishal Patel, MD, D. ABA",
-    title: "Pain Specialist",
+    name: "Vishal Patel",
+    title: "M.D., D. ABA",
+    link: "dr-vishal-patel",
     description:
       "Dr. Patel is a double board-certified interventional pain specialist with fellowship training at the University of Maryland. He provides cutting-edge, patient-centered pain management care.",
   },
 ]
   return (
-    <div className="bg-gray-300">
+    <div className={`${PoppinsFont.className} antialiased bg-gray-300`}>
       <HeroSlider />
       <PhysiciansShowcase physicians={physicians}/>
       <ServicesSection />

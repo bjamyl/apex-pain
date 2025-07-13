@@ -3,16 +3,24 @@
 import Link from "next/link";
 import { Facebook, Send, ArrowUp } from "lucide-react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Outfit } from "next/font/google";
+
+const PoppinsFont = Outfit({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 export default function Footer() {
   const services = [
-    "Spinal Cord and Stimulation",
     "Radiofrequency Ablations",
-    "Kyphoplasty",
     "Epidural Injections",
+    "Joint Injections",
+    "Spinal Cord Stimulation",
     "Peripheral Nerve Stimulation",
     "Sacroiliac Joint Fusion",
-    "Joint Injections",
+    "Kyphoplasty",
+    "Minimally Invasive Lumbar Decompression(MILD)",
+    "Basivertebral Nerve Ablation",
   ];
 
   const providers = [
@@ -23,7 +31,7 @@ export default function Footer() {
   const logo = "/apex-pain-white.png";
 
   return (
-    <div className="xl:p-14 bg-gray-300">
+    <div className={`${PoppinsFont.className} antialiased xl:p-14 bg-gray-300`}>
       <footer className="bg-defaultGreen xl:pt-8 xl:pb-4 text-gray-300 xl:rounded-xl">
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">

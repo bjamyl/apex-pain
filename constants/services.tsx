@@ -32,7 +32,7 @@ export const servicesData: Service[] = [
     title: "Joint Injections",
     description:
       "Delivers medication directly into joints, reducing inflammation and relieving pain from conditions like arthritis.",
-    icon: <GiJoint size={40} className="text-2xl" />,
+    icon: <GiJoint size={30} className="text-2xl" />,
     link: "/services/joint-injections",
     image: "/new/ji.jpeg",
     imageAlt: "joint-injections",
@@ -42,7 +42,7 @@ export const servicesData: Service[] = [
     title: "Radiofrequency Ablation",
     description:
       "A minimally invasive procedure that uses heat from radio waves to target and destroy nerve tissue responsible for transmitting pain.",
-    icon: <GiScalpel size={40} className="text-2xl" />,
+    icon: <GiScalpel size={30} className="text-2xl" />,
     link: "/services/radiofrequency-ablation",
     image: "/new/ra.jpeg",
     imageAlt: "radiofrequency-ablation",
@@ -52,7 +52,7 @@ export const servicesData: Service[] = [
     title: "Epidural Injections",
     description:
       "Delivers medication directly to the spine, reducing inflammation and providing pain relief for neck and back pain.",
-    icon: <FaSyringe size={40} className="text-2xl" />,
+    icon: <FaSyringe size={30} className="text-2xl" />,
     link: "/services/epidural-injections",
     image: "/new/ej.jpeg",
     imageAlt: "epidural-injection",
@@ -62,7 +62,7 @@ export const servicesData: Service[] = [
     title: "Spinal Cord Stimulation",
     description:
       "A treatment for chronic pain that involves implanting a small device near the spinal cord to send electrical impulses.",
-    icon: <SiSpine size={40} className="text-2xl" />,
+    icon: <SiSpine size={30} className="text-2xl" />,
     link: "/services/spinal-cord-stimulation",
     image: "/new/scs.jpeg",
     imageAlt: "spinal-cord-stimulation",
@@ -72,7 +72,7 @@ export const servicesData: Service[] = [
     title: "Peripheral Nerve Stimulation",
     description:
       "Delivers electrical impulses to specific nerves, interrupting pain signals and offering relief for chronic pain conditions.",
-    icon: <LuBrainCircuit size={40} className="text-2xl" />,
+    icon: <LuBrainCircuit size={30} className="text-2xl" />,
     link: "/services/peripheral-nerve-stimulation",
     image: "/services/pns.jpg",
     imageAlt: "peripheral-nerve-stimulation",
@@ -82,7 +82,7 @@ export const servicesData: Service[] = [
     title: "Kyphoplasty",
     description:
       "A minimally invasive surgery used to treat vertebral compression fractures by stabilizing the bone with cement.",
-    icon: <GiBackboneShell size={40} className="text-2xl" />,
+    icon: <GiBackboneShell size={30} className="text-2xl" />,
     link: "/services/kyphoplasty",
     image: "/new/kypho.jpeg",
     imageAlt: "kyphoplasty",
@@ -92,10 +92,20 @@ export const servicesData: Service[] = [
     title: "Sacroiliac Joint Injections",
     description:
       "A surgical procedure to fuse the sacroiliac joints to reduce pain caused by joint instability or degeneration.",
-    icon: <GiPelvisBone size={40} className="text-2xl" />,
+    icon: <GiPelvisBone size={30} className="text-2xl" />,
     link: "/services/sacroiliac-joint-injections",
     image: "/services/sac-injections.jpg",
     imageAlt: "sacroiliac-joint-injections",
+    videoId: 3,
+  },
+  {
+    title: "Intracept Procedure",
+    description:
+      "Targets the basivertebral nerve within the vertebrae to reduce chronic low back pain by using radiofrequency energy.",
+    icon: <LuBrainCircuit size={30} className="text-2xl" />,
+    link: "/services/basivertebral-nerve-ablation",
+    image: "/services/bvna.jpg",
+    imageAlt: "basivertebral-nerve-ablation",
     videoId: 3,
   },
 ];

@@ -1,11 +1,11 @@
 import { PhysicianCard } from "./PhysicianCard"
 
 interface Physician {
-  id: string
   image: string
   name: string
-  title: string
+  link:string;
   description: string
+  title?:string;
 }
 
 interface PhysiciansShowcaseProps {
@@ -30,12 +30,13 @@ export function PhysiciansShowcase({ physicians }: PhysiciansShowcaseProps) {
         </div>
 
         <div className="space-y-12 lg:grid lg:grid-cols-3 lg:space-y-0 lg:space-x-10">
-          {physicians.map((physician) => (
+          {physicians.map((physician,i) => (
             <PhysicianCard
-              key={physician.id}
+              key={i}
+              title={physician.title}
               image={physician.image}
               name={physician.name}
-              title={physician.title}
+              link={physician.link}
               description={physician.description}
             />
           ))}

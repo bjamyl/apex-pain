@@ -22,7 +22,7 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <Link href={link}>
-      <div className="p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
+      <div className="p-2 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
         <div className="relative h-[300px] w-full overflow-hidden rounded-2xl">
           {image && (
             <Image

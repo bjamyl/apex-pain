@@ -271,7 +271,7 @@ export default function ContactForm() {
                   <div className="flex justify-end">
                     <Button
                       type="submit"
-                      className="h-14 rounded-xl bg-defaultGreen px-8 text-base font-medium hover:bg-slate-700 transition-colors"
+                      className="h-14 rounded-none bg-defaultGreen px-8 text-base font-medium hover:bg-slate-700 transition-colors"
                     >
                       Submit Message
                       <ChevronRight className="ml-2 h-5 w-5" />

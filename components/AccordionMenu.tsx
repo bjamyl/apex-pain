@@ -15,7 +15,7 @@ export default function AccordionMenu({ toggleMenu }: AccordionProps) {
   const router = useRouter();
   const serviceItems = [
     {
-      name: "Spinal Cord and Stimulation",
+      name: "Spinal Cord Stimulation",
       href: "/services",
     },
     {

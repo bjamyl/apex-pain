@@ -34,8 +34,8 @@ export function ServicesCard({
   };
 
   return (
-    <div className="border-gray-400 border p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
-      <div className="relative h-[300px] w-full overflow-hidden rounded-2xl">
+    <div className="border-gray-400 border p-2 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
+      <div className="relative h-[300px] w-full overflow-hidden rounded-xl">
         {image && (
           <Image
             src={image}
@@ -48,7 +48,7 @@ export function ServicesCard({
           {icon}
         </div>
       </div>
-      <div className="flex-grow">
+      <div className="flex-grow px-2">
         <h3 className="text-2xl my-5 font-semibold text-defaultGreen">
           {title}
         </h3>
@@ -68,8 +68,8 @@ export function ServicesCard({
           )}
 
           {videoId && (
-            <Button variant="ghost" className="p-6" onClick={handleClick}>
-              <div className="p-3 rounded-full bg-defaultGreen">
+            <Button variant="ghost" className="p-6 hover:bg-transparent" onClick={handleClick}>
+              <div className="p-3 rounded-full bg-defaultGreen ">
                 <Play className="text-white" />
               </div>
               Play Video
