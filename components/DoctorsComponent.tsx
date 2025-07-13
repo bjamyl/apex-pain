@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { PartnerLogoProps } from "./PartnerLogo";
+import AffiliationsMarquee from "./AffiliationsMarquee";
 
 type DoctorsComponentProps = {
   name: string;
@@ -9,6 +11,8 @@ type DoctorsComponentProps = {
   paragraph_one: string;
   paragraph_two: string;
   paragraph_three?: string;
+  education: string;
+  affiliations: PartnerLogoProps[];
 };
 
 export default function DoctorsComponent({
@@ -19,6 +23,8 @@ export default function DoctorsComponent({
   paragraph_one,
   paragraph_two,
   paragraph_three,
+  education,
+  affiliations,
 }: DoctorsComponentProps) {
   return (
     <section className="mx-4 pt-10 md:pt-16 md:mx-20 2xl:mx-60 ">
@@ -63,6 +69,18 @@ export default function DoctorsComponent({
               {paragraph_three}
             </p>
           )}
+        </div>
+        {/* Education and affiliations */}
+        <div>
+          <p className="text-3xl font-bold text-defaultGreen">
+            Education and Affiliations
+          </p>
+          <p className="py-5 text-slate-600 leading-relaxed lg:text-lg text-sm md:text-base">
+            {education}
+          </p>
+          <div className="py-5 md:py-10 lg:py-20">
+            <AffiliationsMarquee affiliations={affiliations} />
+          </div>
         </div>
       </div>
     </section>

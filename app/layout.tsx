@@ -1,23 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Poppins } from "next/font/google";
+import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { HeaderXl } from "@/components/HeaderXl";
 import Footer from "@/components/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
-const poppinsFont = Poppins({
+
+const poppinsFont = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "600", "500", "700", "800", "900"],
 });
