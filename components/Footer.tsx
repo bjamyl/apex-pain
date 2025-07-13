@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Send, ArrowUp, } from "lucide-react";
+import { Facebook, Send, ArrowUp } from "lucide-react";
 import { FaArrowRightLong } from "react-icons/fa6";
-
 
 export default function Footer() {
   const services = [
@@ -14,6 +13,12 @@ export default function Footer() {
     "Peripheral Nerve Stimulation",
     "Sacroiliac Joint Fusion",
     "Joint Injections",
+  ];
+
+  const providers = [
+    { name: "Dr. Ammar Mahmoud", href: "/doctors/ammar-mahmoud" },
+    { name: "Dr. Mansoor Aman", href: "/doctors/mansoor-aman" },
+    { name: "Dr. Vishal Patel", href: "/doctors/vishal-patel" },
   ];
   const logo = "/apex-pain-white.png";
 
@@ -30,10 +35,10 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-sm mb-6">
-                Apex Pain Management is a leading provider of comprehensive pain
-                management solutions, dedicated to improving the quality of life
-                for our patients through innovative treatments and compassionate
-                care.
+                Apex Interventional Pain Specialists is a leading provider of
+                comprehensive pain management solutions, dedicated to improving
+                the quality of life for our patients through innovative
+                treatments and compassionate care.
               </p>
 
               {/* Social Media Icons */}
@@ -72,43 +77,61 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+              <div className="lg:col-span-2 mt-5">
+                <h3 className="text-white text-lg font-semibold mb-4">Links</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <Link
+                      href="/"
+                      className="hover:text-[#f0c14b] transition-colors"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/awareness"
+                      className="hover:text-[#f0c14b] transition-colors"
+                    >
+                      Awareness
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services"
+                      className="hover:text-[#f0c14b] transition-colors"
+                    >
+                      Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="hover:text-[#f0c14b] transition-colors"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
 
+            {/* Providers and Links - Full width on mobile, side by side on desktop */}
             <div className="lg:col-span-2 md:mt-0 mt-4">
-              <h3 className="text-white text-lg font-semibold mb-4">Links</h3>
+              <h3 className="text-white text-lg font-semibold mb-4">
+                Providers
+              </h3>
               <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="/"
-                    className="hover:text-[#f0c14b] transition-colors"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/awareness"
-                    className="hover:text-[#f0c14b] transition-colors"
-                  >
-                    Awareness
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services"
-                    className="hover:text-[#f0c14b] transition-colors"
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="hover:text-[#f0c14b] transition-colors"
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {providers.map((provider, index) => (
+                  <li key={index}>
+                    <Link
+                      href={provider.href}
+                      className="hover:text-[#f0c14b] transition-colors"
+                    >
+                      {provider.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -136,8 +159,8 @@ export default function Footer() {
                     href="/contact"
                     className="bg-defaultGreen text-white py-3 px-6 rounded flex items-center justify-center hover:bg-green-950 transition-colors"
                   >
-                    Request An Appointment 
-                     <FaArrowRightLong className="ml-3" />
+                    Request An Appointment
+                    <FaArrowRightLong className="ml-3" />
                   </Link>
                 </div>
               </div>

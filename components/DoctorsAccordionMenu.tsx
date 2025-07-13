@@ -7,39 +7,36 @@ import {
 } from "@/components/ui/accordion";
 import { useRouter } from "next/navigation";
 
-type AccordionProps = {
+type DoctorsAccordionProps = {
   toggleMenu: () => void;
 };
 
-export default function AccordionMenu({ toggleMenu }: AccordionProps) {
-  const router = useRouter();
-  const serviceItems = [
+export default function DoctorsAccordionMenu({ toggleMenu }: DoctorsAccordionProps) {
+const router = useRouter();
+  const doctors = [
     {
-      name: "Spinal Cord and Stimulation",
-      href: "/services",
+      name: "Dr. Ammar Mahmoud",
+      href: "/doctors/ammar-mahmoud",
     },
     {
-      name: "Radiofrequency Ablations",
-      href: "/services",
+      name: "Dr. Mansoor Aman",
+      href: "/doctors/mansoor-aman",
     },
-    { name: "Kyphoplasty", href: "/services" },
-    { name: "Epidural Injections", href: "/services" },
-    { name: "Joint Injections", href: "/services" },
-    { name: "Peripheral Nerve Stimulation", href: "/services" },
-    { name: "Sacroiliac Joint Fusion", href: "/services" },
-  ];
-
-
+    {
+      name: "Dr. Vishal Patel",
+      href: "/doctors/vishal-patel",
+    }
+  ]
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="services" className="border-none">
         
         <AccordionTrigger className="px-6 hover:bg-gray-50 text-gray-700 text-base font-medium hover:no-underline">
-          <span className="pb-4 border-b border-b-gray-400 w-full">Services</span>
+          <span className="pb-4 border-b border-b-gray-400 w-full">Providers</span>
         </AccordionTrigger>
         <AccordionContent className="pb-0">
           <div className="">
-            {serviceItems.map((service, index) => (
+            {doctors.map((service, index) => (
               <button
                 key={index}
                 className="w-full flex items-center px-8 text-left transition-colors duration-200  text-sm"

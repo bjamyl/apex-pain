@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { RiMenu4Fill } from "react-icons/ri";
 import AccordionMenu from "./AccordionMenu";
 import { useRouter } from "next/navigation";
+import DoctorsAccordionMenu from "./DoctorsAccordionMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export default function Header() {
   return (
     <div className="xl:hidden">
       {/* Header */}
-      <header className="bg-slate-100 shadow-sm relative z-50">
+      <header className="bg-gray-300 shadow-sm relative z-50">
         <div className="flex items-center justify-between px-4 py-2">
           {/* Logo */}
           <div className="flex items-center">
@@ -51,7 +52,7 @@ export default function Header() {
 
       {/* Sliding Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-full md:w-80 bg-slate-100 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full w-full md:w-80 bg-gray-300 z-50 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -65,7 +66,7 @@ export default function Header() {
           <Button
             size="icon"
             onClick={toggleMenu}
-            className="bg-gray-300 rounded-none shadow-none"
+            className="bg-gray-400 rounded-none shadow-none"
             aria-label="Close menu"
           >
             <X className="" size={20} color="black" />
@@ -85,9 +86,10 @@ export default function Header() {
                   toggleMenu();
                 }}
               >
-                <span className="border-b w-full py-4">{item.name}</span>
+                <span className="border-b border-b-gray-400 w-full py-4">{item.name}</span>
               </button>
             ))}
+            <DoctorsAccordionMenu toggleMenu={toggleMenu}/>
 
             {/* Services Accordion */}
             <AccordionMenu toggleMenu={toggleMenu} />

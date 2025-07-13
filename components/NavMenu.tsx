@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import Link from "next/link";
-import { Activity, Heart, Phone, Stethoscope } from "lucide-react";
+import { Activity, Heart, List, Phone, Stethoscope } from "lucide-react";
 import { Poppins } from "next/font/google";
 import {
   NavigationMenu,
@@ -21,7 +21,9 @@ const PoppinsFont = Poppins({
 
 export function NavMenu() {
   return (
-    <NavigationMenu className={`${PoppinsFont.className} antialiased bg-defaultGreen`}>
+    <NavigationMenu
+      className={`${PoppinsFont.className} antialiased bg-defaultGreen`}
+    >
       <NavigationMenuList>
         <NavigationMenuItem className="bg-defaultGreen">
           <Link href="/" legacyBehavior passHref>
@@ -38,44 +40,55 @@ export function NavMenu() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-defaultGreen">Services</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Providers</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              <ListItem
+                title="Dr. Ammar Mahmoud"
+                href="/doctors/ammar-mahmoud"
+              >
+               M.D., D.ABA, FRCPC
+              </ListItem>
+              <ListItem
+                title="Dr. Mansoor Aman"
+                href="/doctors/mansoor-aman"
+              >
+                M.D., D. ABA
+              </ListItem>
+              <ListItem
+                title="Dr. Vishal Patel"
+                href="/doctors/vishal-patel"
+              >
+                M.D., D. ABA
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-defaultGreen">
+            Services
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               <ListItem
                 title="Spinal Cord and Stimulation"
                 href="/services"
-              >
-              </ListItem>
+              ></ListItem>
               <ListItem
                 title="Radiofrequency Ablations"
                 href="/services"
-              >
-              </ListItem>
-              <ListItem
-                title="Kyphoplasty"
-                href="/services"
-              >
-              </ListItem>
-              <ListItem
-                title="Epidural Injections"
-                href="/services"
-              >
-              </ListItem>
-              <ListItem
-                title="Joint Injections"
-                href="/services"
-              >
-              </ListItem>
+              ></ListItem>
+              <ListItem title="Kyphoplasty" href="/services"></ListItem>
+              <ListItem title="Epidural Injections" href="/services"></ListItem>
+              <ListItem title="Joint Injections" href="/services"></ListItem>
               <ListItem
                 title="Peripheral Nerve Stimulation"
                 href="/services"
-              >
-              </ListItem>
+              ></ListItem>
               <ListItem
                 title="Sacroiliac Joint Fusion"
                 href="/services"
-              >
-              </ListItem>
+              ></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
