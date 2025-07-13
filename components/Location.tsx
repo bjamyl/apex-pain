@@ -18,7 +18,7 @@ export default function Location() {
             className="object-cover  object-bottom"
           />
         </div>
-        <div className=" text-defaultGreen items-start  left-6 p-4">
+        <div className="text-defaultGreen items-start  left-6 p-4">
           <p className="text-3xl font-bold lg:text-5xl xl:text-7xl">
             Located at <br className="md:hidden" /> Percy Medical Center.
           </p>

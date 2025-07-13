@@ -16,15 +16,15 @@ const router = useRouter();
   const doctors = [
     {
       name: "Dr. Ammar Mahmoud",
-      href: "/doctors/ammar-mahmoud",
+      href: "/doctors/dr-ammar-mahmoud",
     },
     {
       name: "Dr. Mansoor Aman",
-      href: "/doctors/mansoor-aman",
+      href: "/doctors/dr-mansoor-aman",
     },
     {
       name: "Dr. Vishal Patel",
-      href: "/doctors/vishal-patel",
+      href: "/doctors/dr-vishal-patel",
     }
   ]
   return (

@@ -45,19 +45,19 @@ export function NavMenu() {
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               <ListItem
                 title="Dr. Ammar Mahmoud"
-                href="/doctors/ammar-mahmoud"
+                href="/doctors/dr-ammar-mahmoud"
               >
                M.D., D.ABA, FRCPC
               </ListItem>
               <ListItem
                 title="Dr. Mansoor Aman"
-                href="/doctors/mansoor-aman"
+                href="/doctors/dr-mansoor-aman"
               >
                 M.D., D. ABA
               </ListItem>
               <ListItem
                 title="Dr. Vishal Patel"
-                href="/doctors/vishal-patel"
+                href="/doctors/dr-vishal-patel"
               >
                 M.D., D. ABA
               </ListItem>

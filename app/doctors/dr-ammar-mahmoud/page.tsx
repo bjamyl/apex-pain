@@ -39,6 +39,7 @@ export default function AmmarMahmoud() {
       link: "https://www.windsor.edu/",
     },
   ];
+  
   const details = {
     name: "Dr. Ammar Mahmoud",
     image: "/Ammar.jpg",

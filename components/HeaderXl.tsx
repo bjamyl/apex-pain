@@ -14,7 +14,7 @@ export function HeaderXl() {
         <div className="flex flex-col gap-1 md:flex-row md:items-center md:gap-6">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Mail className="h-4 w-4" />
-            <span>Support Email: info@apex-pain.com</span>
+            <span>Support Email: <a href="mailto:info@apex-pain.com">info@apex-pain.com</a></span>
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="h-4 w-4" />
@@ -22,7 +22,7 @@ export function HeaderXl() {
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Printer className="h-4 w-4" />
-            <span>Fax: 1 888-355-6416</span>
+            <span>Fax: 1-888-355-6416</span>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@ export function HeaderXl() {
             <NavMenu />
           </div>
           <div className="flex items-center gap-4">
-            <Button className="rounded-md py-6 px-4 hover:bg-slate-200 transition-colors bg-slate-100 text-black font-semibold">
+            <Button className="rounded-md py-6 px-4 hover:bg-slate-200 transition-colors bg-slate-100 text-defaultGreen font-semibold">
               Book An Appointment
               <FaArrowRightLong />
             </Button>

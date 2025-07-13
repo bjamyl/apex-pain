@@ -58,7 +58,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className=" border px-4 mt-10 py-10 rounded-2xl md:px-6 xl:pt-20 xl:px-16 ">
+    <div className=" border border-gray-400 px-4 mt-10 py-10 rounded-2xl md:px-6 xl:pt-20 xl:px-16 ">
       <div className="">
         <div className="">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
@@ -116,7 +116,7 @@ export default function ContactForm() {
                     </h3>
                   </div>
                   <div className="ml-15 space-y-1 text-slate-600">
-                    <p>info@apex-mail.com</p>
+                    <p><a href="mailto:info@apex-pain.com">info@apex-pain.com</a></p>
                   </div>
                 </div>
 

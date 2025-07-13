@@ -5,7 +5,7 @@ import { PhoneCall } from "lucide-react";
 export default function ContactCardMain() {
   const image = "/2149329009.jpg";
   return (
-    <div className="border rounded-2xl shadow-md">
+    <div className="rounded-2xl shadow-md">
       <div className="relative w-full h-[400px] lg:h-[500px] overflow-hidden rounded-t-2xl ">
         <Image src={image} fill alt="contact-image" className="object-cover" />
         <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-defaultGreen font-bold absolute bottom-4 left-4 lg:left-20 xl:left-36 lg:bottom-6">

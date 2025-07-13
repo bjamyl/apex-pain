@@ -146,10 +146,10 @@ export default function Footer() {
                     04401
                   </p>
                   <p>
-                    <strong>Support mail:</strong> info@apex-mail.com
+                    <strong>Support mail:</strong> <a href="mailto:info@apex-pain.com">info@apex-pain.com</a>
                   </p>
                   <p>
-                    <strong>Fax:</strong> 1 888-355-6416
+                    <strong>Fax:</strong> 1-888-355-6416
                   </p>
                   <p>
                     <strong>Telephone:</strong> 207-830-2739(APEX)
