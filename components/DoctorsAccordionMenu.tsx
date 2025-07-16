@@ -32,7 +32,7 @@ const router = useRouter();
       <AccordionItem value="services" className="border-none">
         
         <AccordionTrigger className="px-6 hover:bg-gray-50 text-gray-700 text-base font-medium hover:no-underline">
-          <span className="pb-4 border-b border-b-gray-400 w-full">Providers</span>
+          <span className="pb-4 border-b border-b-gray-400 w-full">Meet The Doctors</span>
         </AccordionTrigger>
         <AccordionContent className="pb-0">
           <div className="">

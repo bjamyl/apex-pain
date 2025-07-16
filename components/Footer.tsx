@@ -127,7 +127,7 @@ export default function Footer() {
             {/* Providers and Links - Full width on mobile, side by side on desktop */}
             <div className="lg:col-span-2 md:mt-0 mt-4">
               <h3 className="text-white text-lg font-semibold mb-4">
-                Providers
+                Meet The Doctors
               </h3>
               <ul className="space-y-3">
                 {providers.map((provider, index) => (
