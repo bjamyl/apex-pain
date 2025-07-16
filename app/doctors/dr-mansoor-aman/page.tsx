@@ -44,7 +44,7 @@ export default function MansoorAman() {
   const details = {
     name: "Dr Mansoor Aman",
     image: "/new/mansoor.jpg",
-    image2: "/new/mansoor-profile.jpg",
+    image2: "/new/mansoor-bg.jpg",
     education:
       "Dr. Mansoor Aman is proudly affiliated with leading organizations in pain medicine and neuromodulation. These affiliations underscore his dedication to advancing patient care and innovative treatments in the field.",
     bio: "Dr. Mansoor Aman is double board certified in Interventional Pain Medicine and Anesthesiology. He is a graduate of Windsor University School of Medicine where he earned his Doctor of Medicine (M.D.). Following medical school, he explored his clinical research interests at Drexel University School of Medicine focusing on minimally invasive medical device implementation in clinical applications. Dr. Aman completed his internship in General Surgery and residency in Anesthesiology at Drexel University School of Medicine, where he served as chief resident. He culminated his medical training with a fellowship in Pain Medicine at Harvard Medical School.",

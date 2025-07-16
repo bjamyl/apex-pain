@@ -62,6 +62,7 @@ export default function AmmarMahmoud() {
         image={details.image}
         image2={details.image2}
         bio={details.bio}
+        additionalCss="object-right"
         education={details.education}
         paragraph_one={details.paragraph_one}
         paragraph_two={details.paragraph_two}

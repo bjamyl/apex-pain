@@ -12,6 +12,7 @@ type DoctorsComponentProps = {
   paragraph_two: string;
   paragraph_three?: string;
   education: string;
+  additionalCss?: string;
   affiliations: PartnerLogoProps[];
 };
 
@@ -22,7 +23,7 @@ export default function DoctorsComponent({
   image2,
   paragraph_one,
   paragraph_two,
-  paragraph_three,
+  paragraph_three,additionalCss,  
   education,
   affiliations,
 }: DoctorsComponentProps) {
@@ -53,7 +54,7 @@ export default function DoctorsComponent({
               src={image2}
               fill
               alt={name}
-              className="object-cover object-right"
+              className={`object-cover ${additionalCss ? additionalCss : "object-top"}`}
             />
           </div>
         )}
