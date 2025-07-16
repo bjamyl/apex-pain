@@ -82,7 +82,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "/slider/new-slide-1.jpeg",
+    image: "/slider/new-slide-2.png`",
     title: "Your Wellness, Our Priority",
     description:
       "From hiking trails to family playtime, our goal is to help you return to the moments that matter most—stronger and pain-free.",
