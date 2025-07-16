@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
               <p className="text-sm mb-6">
                 Apex Interventional Pain Specialists is a leading provider of
-                comprehensive pain management solutions, dedicated to improving
+                interventional pain management solutions, dedicated to improving
                 the quality of life for our patients through innovative
                 treatments and compassionate care.
               </p>
@@ -57,13 +57,6 @@ export default function Footer() {
                 >
                   <Facebook size={20} />
                   <span className="sr-only">Facebook</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="border p-3 rounded-full hover:bg-white hover:text-defaultGreen transition-colors"
-                >
-                  <Send size={20} />
-                  <span className="sr-only">Telegram</span>
                 </Link>
               </div>
             </div>
@@ -124,24 +117,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Providers and Links - Full width on mobile, side by side on desktop */}
-            <div className="lg:col-span-2 md:mt-0 mt-4">
-              <h3 className="text-white text-lg font-semibold mb-4">
-                Meet The Doctors
-              </h3>
-              <ul className="space-y-3">
-                {providers.map((provider, index) => (
-                  <li key={index}>
-                    <Link
-                      href={provider.href}
-                      className="hover:text-[#f0c14b] transition-colors"
-                    >
-                      {provider.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* Contact With Us - Full width on mobile, right side on tablet and desktop */}
             <div className="lg:col-span-4 md:mt-0 mt-8">
