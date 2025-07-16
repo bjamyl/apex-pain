@@ -14,35 +14,83 @@ import "swiper/css/effect-fade";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
+// const slides = [
+//   {
+//     id: 1,
+//     image: "/slider/new-slide-1.jpeg",
+//     title: "Expert Pain Management Solutions",
+//     description:
+//       "With advanced fellowship training from Cleveland Clinic, we bring cutting-edge techniques to provide lasting relief for patients suffering from chronic pain conditions.",
+//     buttonText: "View All Services",
+//     link: "/services"
+//   },
+//   {
+//     id: 2,
+//     image: "/slider/new-slide-1.jpeg",
+//     title: "Expert Medical Professionals. Personalized Treatment.",
+//     description:
+//       "Our experts combine their extensive training with a compassionate approach to develop customized treatment plans for each patient's unique needs.",
+//     buttonText: "View All Services",
+//     link:"/services"
+//   },
+//   {
+//     id: 3,
+//     image: "/slider/new-slide-3.jpg",
+//     title: "Advanced Surgical Interventions",
+//     description:
+//       "Specializing in minimally invasive procedures, we offer state-of-the-art surgical solutions for complex pain conditions.",
+//     buttonText: "Get In Touch",
+//     link:"/contact"
+//   },
+//   {
+//     id: 3,
+//     image: "/slider/new-slide-4.jpg",
+//     title: "Advanced Surgical Interventions",
+//     description:
+//       "Specializing in minimally invasive procedures, we offer state-of-the-art surgical solutions for complex pain conditions.",
+//     buttonText: "Get In Touch",
+//     link:"/contact"
+//   },
+// ];
 const slides = [
   {
     id: 1,
-    image: "/slider/slide1.jpg",
-    title: "Expert Pain Management Solutions",
+    image: "/slider/new-slide-4.jpg",
+    title: "Relief Starts Here",
     description:
-      "With advanced fellowship training from Cleveland Clinic, we bring cutting-edge techniques to provide lasting relief for patients suffering from chronic pain conditions.",
+      "Discover evidence-based treatments that reduce pain and restore vitality—so you can get back to doing what you love.",
     buttonText: "View All Services",
     link: "/services"
   },
   {
     id: 2,
-    image: "/slider/slide2.jpg",
-    title: "Expert Medical Professionals. Personalized Treatment.",
+    image: "/slider/new-slide-1.jpeg",
+    title: "Feel Better. Live Fully.",
     description:
-      "Our experts combine their extensive training with a compassionate approach to develop customized treatment plans for each patient's unique needs.",
+      "Our team of compassionate specialists creates personalized care plans that support your journey to a healthier, more active life.",
     buttonText: "View All Services",
-    link:"/services"
+    link: "/services"
   },
   {
     id: 3,
-    image: "/slider/slide3.jpg",
-    title: "Advanced Surgical Interventions",
+    image: "/slider/new-slide-3.jpg",
+    title: "Move Freely Again",
     description:
-      "Specializing in minimally invasive procedures, we offer state-of-the-art surgical solutions for complex pain conditions.",
+      "We use advanced, minimally invasive techniques to restore movement, ease discomfort, and help you live pain-free.",
     buttonText: "Get In Touch",
-    link:"/contact"
+    link: "/contact"
+  },
+  {
+    id: 4,
+    image: "/slider/new-slide-1.jpeg",
+    title: "Your Wellness, Our Priority",
+    description:
+      "From hiking trails to family playtime, our goal is to help you return to the moments that matter most—stronger and pain-free.",
+    buttonText: "Get In Touch",
+    link: "/contact"
   },
 ];
+
 
 export default function HeroSlider() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
