@@ -55,7 +55,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const slides = [
   {
     id: 1,
-    image: "/slider/new-slide-4.jpg",
+    image: "/slider/new-slide-4.jpeg",
     title: "Relief Starts Here",
     description:
       "Discover evidence-based treatments that reduce pain and restore vitality—so you can get back to doing what you love.",
@@ -82,7 +82,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "/slider/new-slide-2.png`",
+    image: "/slider/new-slide-2.png",
     title: "Your Wellness, Our Priority",
     description:
       "From hiking trails to family playtime, our goal is to help you return to the moments that matter most—stronger and pain-free.",

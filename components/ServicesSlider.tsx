@@ -85,7 +85,7 @@ export default function ServicesSlider() {
               return (
                 <div
                   key={i}
-                  className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"
+                  className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3 md:px-5"
                 >
                   <ServicesCard
                     isHome={true}
