@@ -59,6 +59,16 @@ export const servicesData: Service[] = [
     videoId: 1,
   },
   {
+    title: "Sacroiliac Joint Fusion",
+    description:
+      "Sacroiliac joint fusion offers lasting relief from sacroiliac joint pain by stabilizing the source of dysfunction.",
+    icon: <GiPelvisBone size={30} className="text-2xl" />,
+    link: "/services/spinal-cord-stimulation",
+    image: "/services/sij-fusion.jpg",
+    imageAlt: "sacroiliac-joint-fusion",
+    videoId: 6,
+  },
+  {
     title: "Spinal Cord Stimulation",
     description:
       "A treatment for chronic pain that involves implanting a small device near the spinal cord to send electrical impulses.",
@@ -81,7 +91,7 @@ export const servicesData: Service[] = [
   {
     title: "Kyphoplasty",
     description:
-      "A minimally invasive surgery used to treat vertebral compression fractures by stabilizing the bone with cement.",
+      "A minimally invasive surgery used to treat vertebral compression fractures, where a balloon is inflated inside a fractured vertebra and then filled with cement to stabilize the bone and relieve pain.",
     icon: <GiBackboneShell size={30} className="text-2xl" />,
     link: "/services/kyphoplasty",
     image: "/new/kypho.jpeg",
@@ -89,9 +99,9 @@ export const servicesData: Service[] = [
     videoId: 4,
   },
   {
-    title: "Sacroiliac Joint Fusion",
+    title: "Sacroiliac Joint Injection",
     description:
-      "A surgical procedure to fuse the sacroiliac joints to reduce pain caused by joint instability or degeneration.",
+      "A sacroiliac joint injection (SIJI) is a medical procedure where anti-inflammatory medication and anesthetic are injected directly into the sacroiliac joint to relieve pain in the lower back, buttock, or upper leg area.",
     icon: <GiPelvisBone size={30} className="text-2xl" />,
     link: "/services/sacroiliac-joint-injections",
     image: "/services/sac-injections.jpg",

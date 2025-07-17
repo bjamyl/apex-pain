@@ -21,6 +21,8 @@ export default function Footer() {
     "Kyphoplasty",
     "Minimally Invasive Lumbar Decompression(MILD)",
     "Basivertebral Nerve Ablation",
+        "Sacroiliac Joint Fusion",
+
   ];
 
   const providers = [

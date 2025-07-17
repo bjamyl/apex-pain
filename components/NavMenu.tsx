@@ -32,22 +32,13 @@ export function NavMenu() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/awareness" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Awareness
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
           <NavigationMenuTrigger>Meet The Doctors</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               <ListItem
                 title="Dr. Ammar Mahmoud"
                 href="/doctors/dr-ammar-mahmoud"
-              >
-              
-              </ListItem>
+              ></ListItem>
               <ListItem
                 title="Dr. Mansoor Aman"
                 href="/doctors/dr-mansoor-aman"
@@ -85,7 +76,7 @@ export function NavMenu() {
                 href="/services"
               ></ListItem>
               <ListItem
-                title="Sacroiliac Joint Fusion"
+                title="Sacroiliac Joint Injection"
                 href="/services"
               ></ListItem>
               <ListItem
@@ -96,9 +87,21 @@ export function NavMenu() {
                 title="Basivertebral Nerve Ablation"
                 href="/services"
               ></ListItem>
+              <ListItem
+                title="Sacroiliac Joint Fusion"
+                href="/services"
+              ></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/awareness" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Awareness
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
         <NavigationMenuItem>
           <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
