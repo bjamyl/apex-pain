@@ -7,6 +7,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 import AccordionMenu from "./AccordionMenu";
 import { useRouter } from "next/navigation";
 import DoctorsAccordionMenu from "./DoctorsAccordionMenu";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,9 +19,8 @@ export default function Header() {
   };
 
   const regularMenuItems = [
-    { name: "Home", href: "/" },
-    { name: "Contact", href: "/contact" },
     { name: "Awareness", href: "/awareness" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -29,9 +29,11 @@ export default function Header() {
       <header className="bg-gray-300 shadow-sm relative z-50">
         <div className="flex items-center justify-between px-4 py-2">
           {/* Logo */}
-          <div className="flex items-center">
-            <img src={logo} alt="apex-logo" className="h-20" />
-          </div>
+          <Link href="/">
+            <div className="flex items-center">
+              <img src={logo} alt="apex-logo" className="h-20" />
+            </div>
+          </Link>
 
           {/* Hamburger Menu Button */}
           <RiMenu4Fill
@@ -77,6 +79,23 @@ export default function Header() {
         <nav className="flex-1 overflow-y-auto mt-16 mx-2">
           <div className="py-2">
             {/* Regular Menu Items */}
+            <button
+              className="w-full flex items-center px-6 text-left hover:bg-gray-50 transition-colors duration-200 text-gray-700 text-base font-medium"
+              onClick={() => {
+                router.push("/");
+                toggleMenu();
+              }}
+            >
+              <span className="border-b border-b-gray-400 w-full py-4">
+                Home
+              </span>
+            </button>
+
+            <DoctorsAccordionMenu toggleMenu={toggleMenu} />
+
+            {/* Services Accordion */}
+            <AccordionMenu toggleMenu={toggleMenu} />
+
             {regularMenuItems.map((item, index) => (
               <button
                 key={index}
@@ -86,13 +105,11 @@ export default function Header() {
                   toggleMenu();
                 }}
               >
-                <span className="border-b border-b-gray-400 w-full py-4">{item.name}</span>
+                <span className="border-b border-b-gray-400 w-full py-4">
+                  {item.name}
+                </span>
               </button>
             ))}
-            <DoctorsAccordionMenu toggleMenu={toggleMenu}/>
-
-            {/* Services Accordion */}
-            <AccordionMenu toggleMenu={toggleMenu} />
           </div>
         </nav>
       </div>

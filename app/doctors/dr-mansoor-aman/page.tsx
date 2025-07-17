@@ -42,7 +42,7 @@ export default function MansoorAman() {
   ];
 
   const details = {
-    name: "Dr Mansoor Aman",
+    name: "Dr. Mansoor Aman",
     image: "/new/mansoor.jpg",
     image2: "/new/mansoor-bg.jpg",
     education:

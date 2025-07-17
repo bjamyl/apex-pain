@@ -46,19 +46,19 @@ export function NavMenu() {
                 title="Dr. Ammar Mahmoud"
                 href="/doctors/dr-ammar-mahmoud"
               >
-               M.D., D.ABA, FRCPC
+              
               </ListItem>
               <ListItem
                 title="Dr. Mansoor Aman"
                 href="/doctors/dr-mansoor-aman"
               >
-                M.D., D. ABA
+                Joining in Nov 2025
               </ListItem>
               <ListItem
                 title="Dr. Vishal Patel"
                 href="/doctors/dr-vishal-patel"
               >
-                M.D., D. ABA
+                Joining in Nov 2025
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -86,6 +86,14 @@ export function NavMenu() {
               ></ListItem>
               <ListItem
                 title="Sacroiliac Joint Fusion"
+                href="/services"
+              ></ListItem>
+              <ListItem
+                title="Minimally Invasive Lumbar Decompression(MILD)"
+                href="/services"
+              ></ListItem>
+              <ListItem
+                title="Basivertebral Nerve Ablation"
                 href="/services"
               ></ListItem>
             </ul>

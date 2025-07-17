@@ -27,6 +27,8 @@ export default function AccordionMenu({ toggleMenu }: AccordionProps) {
     { name: "Joint Injections", href: "/services" },
     { name: "Peripheral Nerve Stimulation", href: "/services" },
     { name: "Sacroiliac Joint Fusion", href: "/services" },
+    { name: "Minimally Invasive Lumbar Decompression(MILD)", href: "/services" },
+    { name: "Basivertebral Nerve Ablation", href: "/services" },
   ];
 
 

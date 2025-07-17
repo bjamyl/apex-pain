@@ -12,7 +12,7 @@ type DoctorsAccordionProps = {
 };
 
 export default function DoctorsAccordionMenu({ toggleMenu }: DoctorsAccordionProps) {
-const router = useRouter();
+  const router = useRouter();
   const doctors = [
     {
       name: "Dr. Ammar Mahmoud",
@@ -20,17 +20,19 @@ const router = useRouter();
     },
     {
       name: "Dr. Mansoor Aman",
+      subtitle: "Joining in Nov 2025",
       href: "/doctors/dr-mansoor-aman",
     },
     {
       name: "Dr. Vishal Patel",
+      subtitle: "Joining in Nov 2025",
       href: "/doctors/dr-vishal-patel",
     }
   ]
+
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="services" className="border-none">
-        
         <AccordionTrigger className="px-6 hover:bg-gray-50 text-gray-700 text-base font-medium hover:no-underline">
           <span className="pb-4 border-b border-b-gray-400 w-full">Meet The Doctors</span>
         </AccordionTrigger>
@@ -39,13 +41,18 @@ const router = useRouter();
             {doctors.map((service, index) => (
               <button
                 key={index}
-                className="w-full flex items-center px-8 text-left transition-colors duration-200  text-sm"
+                className="w-full flex items-center px-8 text-left transition-colors duration-200 text-sm"
                 onClick={() => {
                   router.push(service.href);
                   toggleMenu();
                 }}
               >
-                <span className="py-4 border-b border-b-gray-400 w-full">{service.name}</span>
+                <span className="py-4 border-b border-b-gray-400 w-full">
+                  <div>{service.name}</div>
+                  {service.subtitle && (
+                    <div className="text-xs text-gray-500 mt-1">{service.subtitle}</div>
+                  )}
+                </span>
               </button>
             ))}
           </div>

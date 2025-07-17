@@ -89,7 +89,7 @@ export const servicesData: Service[] = [
     videoId: 4,
   },
   {
-    title: "Sacroiliac Joint Injections",
+    title: "Sacroiliac Joint Fusion",
     description:
       "A surgical procedure to fuse the sacroiliac joints to reduce pain caused by joint instability or degeneration.",
     icon: <GiPelvisBone size={30} className="text-2xl" />,
