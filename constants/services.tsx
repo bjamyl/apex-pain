@@ -114,7 +114,7 @@ export const servicesData: Service[] = [
       "Targets the basivertebral nerve within the vertebrae to reduce chronic low back pain by using radiofrequency energy.",
     icon: <LuBrainCircuit size={30} className="text-2xl" />,
     link: "/services/basivertebral-nerve-ablation",
-    image: "/services/bvna.jpg",
+    image: "/services/ip.jpg",
     imageAlt: "basivertebral-nerve-ablation",
     videoId: 3,
   },
