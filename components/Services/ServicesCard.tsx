@@ -34,7 +34,7 @@ export function ServicesCard({
   };
 
   return (
-    <div className="border-gray-400 border p-2 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
+    <div className=" px-2 pt-2 py-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col gap-4 h-full">
       <div className="relative h-[300px] w-full overflow-hidden rounded-xl">
         {image && (
           <Image
@@ -61,7 +61,7 @@ export function ServicesCard({
           ) : (
             <Link
               href="/contact"
-              className="text-base text-slate-500 flex items-center gap-2"
+              className="text-base  text-slate-500 flex items-center gap-2"
             >
               Get In Touch <FaArrowRightLong />
             </Link>

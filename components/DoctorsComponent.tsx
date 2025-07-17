@@ -23,7 +23,8 @@ export default function DoctorsComponent({
   image2,
   paragraph_one,
   paragraph_two,
-  paragraph_three,additionalCss,  
+  paragraph_three,
+  additionalCss,
   education,
   affiliations,
 }: DoctorsComponentProps) {
@@ -54,7 +55,9 @@ export default function DoctorsComponent({
               src={image2}
               fill
               alt={name}
-              className={`object-cover ${additionalCss ? additionalCss : "object-top"}`}
+              className={`object-cover ${
+                additionalCss ? additionalCss : "object-top"
+              }`}
             />
           </div>
         )}
@@ -72,16 +75,16 @@ export default function DoctorsComponent({
           )}
         </div>
         {/* Education and affiliations */}
-        <div>
-          <p className="text-3xl font-bold text-defaultGreen">
-            Education and Affiliations
-          </p>
-          <p className="py-5 text-slate-600 leading-relaxed lg:text-lg text-sm md:text-base">
-            {education}
-          </p>
-          <div className="py-5 md:py-10 lg:py-20">
-            <AffiliationsMarquee affiliations={affiliations} />
-          </div>
+      </div>
+      <div className="">
+        <p className="text-3xl font-bold text-defaultGreen">
+          Education and Affiliations
+        </p>
+        <p className="py-5 text-slate-600 leading-relaxed lg:text-lg text-sm md:text-base">
+          {education}
+        </p>
+        <div className="py-5 md:py-10 lg:py-20">
+          <AffiliationsMarquee affiliations={affiliations} />
         </div>
       </div>
     </section>

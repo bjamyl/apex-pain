@@ -23,7 +23,7 @@ export default function ContactCardMain() {
           </div>
           <div>
             <p className="text-slate-700 font-semibold">Call Us When You Need Help!</p>
-            <p className="text-lg">207-830-2739</p>
+            <p className="text-lg">+1 207-830-2739</p>
           </div>
         </div>
       </div>

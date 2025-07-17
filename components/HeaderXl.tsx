@@ -37,10 +37,12 @@ export function HeaderXl() {
             <NavMenu />
           </div>
           <div className="flex items-center gap-4">
+            <Link href={"/contact"}>
             <Button className="rounded-none py-6 px-4 hover:bg-slate-200 transition-colors bg-slate-100 text-defaultGreen font-semibold">
               Book An Appointment
               <FaArrowRightLong />
             </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -21,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Link from "next/link";
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
@@ -101,7 +102,7 @@ export default function ContactForm() {
                     </h3>
                   </div>
                   <div className="ml-15 space-y-1 text-slate-600">
-                    <p>Call Support: 207-830-2739(APEX)</p>
+                    <p>Call Support: <br /> +1 207-830-2739</p>
                   </div>
                 </div>
 
@@ -143,9 +144,9 @@ export default function ContactForm() {
                   Follow Us:
                 </h3>
                 <div className="flex flex-wrap gap-4 text-slate-600">
-                  <button className="hover:text-slate-800 transition-colors">
+                  <Link target="_blank" href="https://www.facebook.com/apex.pain.me?mibextid=ZbWKwL" className="hover:text-slate-800 transition-colors">
                     Facebook
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ export default function ServicesGrid() {
     <section className="">
       <HeaderCard
         title="Services"
-        image="/services/epidural-injection.jpg"
+        image="/new/services.jpg"
         description="  At Apex Interventional Pain Specialists, Dr. Ammar Mahmoud and our
           dedicated team deliver advanced, specialized care for patients
           throughout Maine. Our treatment plans focus exclusively on innovative
@@ -51,7 +51,6 @@ export default function ServicesGrid() {
             title={service.title}
             image={service.image}
             imageAlt={service.imageAlt}
-            videoId={service.videoId}
             onWatchVideo={handleVideoClick}
           />
         ))}

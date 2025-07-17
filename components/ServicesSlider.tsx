@@ -74,7 +74,7 @@ export default function ServicesSlider() {
         </div>
 
         {/* Cards Container */}
-        <div className="overflow-hidden">
+        <div className="overflow-x-hidden py-4">
           <div
             className="flex transition-transform duration-300 ease-in-out"
             style={{
@@ -95,7 +95,6 @@ export default function ServicesSlider() {
                     title={service.title}
                     image={service.image}
                     imageAlt={service.imageAlt}
-                    videoId={service.videoId}
                     onWatchVideo={handleVideoClick}
                   />
                 </div>

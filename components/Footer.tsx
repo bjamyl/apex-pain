@@ -51,8 +51,8 @@ export default function Footer() {
 
               {/* Social Media Icons */}
               <div className="flex space-x-3 mb-8">
-                <Link
-                  href="#"
+                <Link target="_blank"
+                  href="https://www.facebook.com/apex.pain.me?mibextid=ZbWKwL"
                   className="border p-3 rounded-full hover:bg-white hover:text-defaultGreen transition-colors"
                 >
                   <Facebook size={20} />
@@ -125,17 +125,17 @@ export default function Footer() {
 
                 <div className="space-y-4 text-sm">
                   <p>
-                    <strong>Address:</strong> 840 Hammond St. STE 2 Bangor, ME
+                    <strong>Address </strong> 840 Hammond St. STE 2 Bangor, ME
                     04401
                   </p>
                   <p>
-                    <strong>Support mail:</strong> <a href="mailto:info@apex-pain.com">info@apex-pain.com</a>
+                    <strong>Support mail </strong> <a href="mailto:info@apex-pain.com">info@apex-pain.com</a>
                   </p>
                   <p>
-                    <strong>Fax:</strong> 1-888-355-6416
+                    <strong>Fax </strong> 1-888-355-6416
                   </p>
                   <p>
-                    <strong>Telephone:</strong> 207-830-2739(APEX)
+                    <strong>Telephone </strong>+1 207-830-2739(APEX)
                   </p>
 
                   <Link
