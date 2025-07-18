@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Printer } from "lucide-react";
+import { Mail, MapPin, Phone, Printer } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { NavMenu } from "./NavMenu";
@@ -23,6 +23,10 @@ export function HeaderXl() {
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Printer className="h-4 w-4" />
             <span>Fax: 1-888-355-6416</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <Phone className="h-4 w-4" />
+            <span>Phone: 207-830-2739</span>
           </div>
         </div>
       </div>

@@ -67,7 +67,7 @@ const slides = [
     image: "/slider/new-slide-1.jpeg",
     title: "Feel Better. Live Fully.",
     description:
-      "Our team of compassionate specialists creates personalized care plans that support your journey to a healthier, more active life.",
+      "Our team of compassionate specialists create personalized care plans that support your journey to a healthier, more active life.",
     buttonText: "View All Services",
     link: "/services"
   },

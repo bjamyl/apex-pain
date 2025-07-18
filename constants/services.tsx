@@ -101,7 +101,7 @@ export const servicesData: Service[] = [
   {
     title: "Sacroiliac Joint Injection",
     description:
-      "A sacroiliac joint injection (SIJI) is a medical procedure where anti-inflammatory medication and anesthetic are injected directly into the sacroiliac joint to relieve pain in the lower back, buttock, or upper leg area.",
+      "A x-ray guided procedure where anti-inflammatory medication and anesthetic are injected directly into the joint to relieve pain in the lower back, buttock, and upper leg.",
     icon: <GiPelvisBone size={30} className="text-2xl" />,
     link: "/services/sacroiliac-joint-injections",
     image: "/services/sac-injections.jpg",

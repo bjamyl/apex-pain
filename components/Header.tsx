@@ -19,7 +19,7 @@ export default function Header() {
   };
 
   const regularMenuItems = [
-    { name: "Awareness", href: "/awareness" },
+    // { name: "Awareness", href: "/awareness" },
     { name: "Contact", href: "/contact" },
   ];
 

@@ -33,8 +33,8 @@ export default function ServicesGrid() {
       <HeaderCard
         title="Services"
         image="/new/services.jpg"
-        description="  At Apex Interventional Pain Specialists, Dr. Ammar Mahmoud and our
-          dedicated team deliver advanced, specialized care for patients
+        description="  At Apex Interventional Pain Specialists, our
+          dedicated team delivers advanced, specialized care for patients
           throughout Maine. Our treatment plans focus exclusively on innovative
           interventional techniques that target the source of your pain—not just
           the symptoms. As specialists in minimally invasive pain management

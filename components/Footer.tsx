@@ -91,14 +91,14 @@ export default function Footer() {
                       Home
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/awareness"
                       className="hover:text-[#f0c14b] transition-colors"
                     >
                       Awareness
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="/services"

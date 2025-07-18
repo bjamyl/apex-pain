@@ -132,7 +132,7 @@ export default function ContactForm() {
                     </h3>
                   </div>
                   <div className="ml-15 space-y-1 text-slate-600">
-                    <p>Mon - Sat: 8.00am - 18.00pm</p>
+                    <p>Mon - Sat: 9.00am - 4.00pm</p>
                     <p>Holiday : Closed</p>
                   </div>
                 </div>

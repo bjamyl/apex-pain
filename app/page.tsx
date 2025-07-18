@@ -22,7 +22,7 @@ export default function Home() {
     link: "dr-ammar-mahmoud",
     title: "M.D., D.ABA, FRCPC",
     description:
-      "Dr. Mahmoud is a triple board-certified interventional pain specialist with fellowship training at Cleveland Clinic Foundation. He specializes in advanced, evidence-based pain treatment.",
+      "Dr. Mahmoud is a triple board-certified interventional pain specialist with fellowship training at Cleveland Clinic Foundation. He specializes in advanced, evidence-based pain treatments.",
   },
   {
     image: "/new/mansoor.jpg",

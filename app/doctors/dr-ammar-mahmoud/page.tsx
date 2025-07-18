@@ -44,7 +44,7 @@ export default function AmmarMahmoud() {
     name: "Dr. Ammar Mahmoud",
     image: "/Ammar.jpg",
     image2: "/slider/slide1.jpg",
-    bio: "Dr. Ammar Mahmoud is a double board-certified physician in Interventional Pain Medicine and Anesthesiology. He is a graduate of Windsor University School of Medicine. Dr. Mahmoud completed his internship and anesthesiology residency at John H. Stroger Hospital of Cook County in Chicago, IL., where he served as chief resident. He completed a multidisciplinary Pain Medicine Fellowship at the prestigious Cleveland Clinic Foundation, where he gained expertise in advanced and cutting-edge pain therapies and served as chief fellow.",
+    bio: "Dr. Ammar Mahmoud is a triple board-certified physician in Interventional Pain Medicine and Anesthesiology. He is a graduate of Windsor University School of Medicine. Dr. Mahmoud completed his internship and anesthesiology residency at John H. Stroger Hospital of Cook County in Chicago, IL., where he served as chief resident. He completed a multidisciplinary Pain Medicine Fellowship at the prestigious Cleveland Clinic Foundation, where he gained expertise in advanced and cutting-edge pain therapies and served as chief fellow.",
     paragraph_one:
       "Dr. Mahmoud authors expert content and publishes in high-impact scientific journals. He lectures at the American Society of Pain and Neuroscience (ASPN) annual meeting, where he serves as faculty for the Poster- to- Podium physician research program and serves on the ASPN CARES cancer committee. Dr. Mahmoud is also an active member of the North American Neuromodulation Society (NANS) and International Neuromodulation Society (INS).",
     paragraph_two:
