@@ -99,6 +99,16 @@ export const servicesData: Service[] = [
     videoId: 4,
   },
   {
+    title: "Minimally Invasive Lumbar Decompression(MILD)",
+    description:
+      "The minimally invasive lumbar decompression (MILD) procedure is a safe, outpatient treatment for spinal stenosis that removes access tissue pressing on the nerves to help relieve leg and back pain and improve walking",
+    icon: <SiSpine size={30} className="text-2xl" />,
+    link: "/services/sacroiliac-joint-injections",
+    image: "/services/sac-injections.jpg",
+    imageAlt: "mild",
+    videoId: 3,
+  },
+  {
     title: "Sacroiliac Joint Injection",
     description:
       "A x-ray guided procedure where anti-inflammatory medication and anesthetic are injected directly into the joint to relieve pain in the lower back, buttock, and upper leg.",

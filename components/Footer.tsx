@@ -17,10 +17,10 @@ export default function Footer() {
     "Joint Injections",
     "Spinal Cord Stimulation",
     "Peripheral Nerve Stimulation",
-    "Sacroiliac Joint Fusion",
+    "Sacroiliac Joint Injection",
     "Kyphoplasty",
     "Minimally Invasive Lumbar Decompression(MILD)",
-    "Basivertebral Nerve Ablation",
+    "Basivertebral Nerve Ablation-Intracept Procedure",
         "Sacroiliac Joint Fusion",
 
   ];

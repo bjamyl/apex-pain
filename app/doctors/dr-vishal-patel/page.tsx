@@ -53,12 +53,12 @@ export default function VishalPatel() {
   const details = {
     name: "Dr. Vishal Patel",
     image: "/new/patel.jpg",
-    image2: "/new/vishal-profile.jpg",
+    image2: "/new/patel2.jpg",
     bio: "Dr. Vishal Patel is double board certified in Interventional Pain Medicine and Anesthesiology. He earned his Bachelor of Science from Carnegie Mellon University, and his Doctor of Medicine (M.D.) from Robert Wood Johnson Medical School. He pursued specialty training in Anesthesiology at Drexel University College of Medicine, where he served as chief resident. He obtained subspecialty fellowship training in Pain Medicine at the University of Maryland",
     paragraph_one:
       "Dr. Patel is an active member of the International Pain and Spine Symposium where he serves on the education committee. He is also a member of the American Society of Regional Anesthesia and Pain Medicine (ASRA), North American Neuromodulation Society (NANS), International Neuromodulation Society (INS), American Medical Association (AMA) and American Society of Pain and Neuroscience (ASPN).",
     paragraph_two:
-      "Dr. Patel attends regional, national, and international Pain conferences to provide his patients with the most evidence based cutting edge innovations to alleviate pain. He is an expert in advanced spinal pain care, complex regional pain syndrome, and diabetic neuropathy. Dr. Patel offers spinal cord stimulation, dorsal root ganglion, peripheral nerve stimulation, kyphoplasty, intrathecal drug delivery, minimally invasive decompression (mild procedure), and joint fusion techniques for chronic pain. Dr. Patel has been offering compassionate care to the greater Fox Valley community for the last six years and offers a tailored approach to the needs of his patients including medications, injections, and surgery.",
+      "Dr. Patel attends regional, national, and international Pain conferences to provide his patients with the most evidence based cutting edge innovations to alleviate pain. He is an expert in advanced spinal pain care, complex regional pain syndrome, and diabetic neuropathy. Dr. Patel offers spinal cord stimulation, dorsal root ganglion, peripheral nerve stimulation, kyphoplasty, intrathecal drug delivery, minimally invasive decompression (mild procedure), and joint fusion techniques for chronic pain.",
     education:
       "Dr. Vishal Patel is proudly affiliated with leading organizations in pain medicine and neuromodulation. These affiliations underscore his dedication to advancing patient care and innovative treatments in the field.",
     affiliations: affiliations,
