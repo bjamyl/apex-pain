@@ -13,7 +13,7 @@ export default function Services() {
               Our Practice Areas and Expertise
             </h3>
             <p className="my-5 md:mb-0 text-slate-500">
-              We provide several intervention pain services in Bangor
+              We provide several <span className="text-bold">interventional</span> pain services in Bangor
             </p>
           </div>
           <Link
