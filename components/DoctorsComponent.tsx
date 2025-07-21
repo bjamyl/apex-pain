@@ -76,7 +76,7 @@ export default function DoctorsComponent({
         </div>
         {/* Education and affiliations */}
       </div>
-      <div className="">
+      <div className="mt-5 md:mt-10">
         <p className="text-3xl font-bold text-defaultGreen">
           Education and Affiliations
         </p>

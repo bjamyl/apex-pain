@@ -104,7 +104,7 @@ export const servicesData: Service[] = [
       "The minimally invasive lumbar decompression (MILD) procedure is a safe, outpatient treatment for spinal stenosis that removes access tissue pressing on the nerves to help relieve leg and back pain and improve walking",
     icon: <SiSpine size={30} className="text-2xl" />,
     link: "/services/sacroiliac-joint-injections",
-    image: "/services/sac-injections.jpg",
+    image: "/services/mild.jpg",
     imageAlt: "mild",
     videoId: 3,
   },
@@ -119,7 +119,7 @@ export const servicesData: Service[] = [
     videoId: 3,
   },
   {
-    title: "Intracept Procedure",
+    title: "Basivertebral Nerve Ablation-Intracept Procedure",
     description:
       "Targets the basivertebral nerve within the vertebrae to reduce chronic low back pain by using radiofrequency energy.",
     icon: <LuBrainCircuit size={30} className="text-2xl" />,
