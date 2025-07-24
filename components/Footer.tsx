@@ -21,8 +21,8 @@ export default function Footer() {
     "Kyphoplasty",
     "Minimally Invasive Lumbar Decompression(MILD)",
     "Basivertebral Nerve Ablation-Intracept Procedure",
-        "Sacroiliac Joint Fusion",
-
+    "Sacroiliac Joint Fusion",
+    "Dorsal Root Ganglion Stimulation",
   ];
 
   const providers = [
@@ -53,7 +53,8 @@ export default function Footer() {
 
               {/* Social Media Icons */}
               <div className="flex space-x-3 mb-8">
-                <Link target="_blank"
+                <Link
+                  target="_blank"
                   href="https://www.facebook.com/apex.pain.me?mibextid=ZbWKwL"
                   className="border p-3 rounded-full hover:bg-white hover:text-defaultGreen transition-colors"
                 >
@@ -119,7 +120,6 @@ export default function Footer() {
               </div>
             </div>
 
-
             {/* Contact With Us - Full width on mobile, right side on tablet and desktop */}
             <div className="lg:col-span-4 md:mt-0 mt-8">
               <div className="bg-gray-300 text-defaultGreen p-6 rounded-lg">
@@ -131,7 +131,8 @@ export default function Footer() {
                     04401
                   </p>
                   <p>
-                    <strong>Support mail </strong> <a href="mailto:info@apex-pain.com">info@apex-pain.com</a>
+                    <strong>Support mail </strong>{" "}
+                    <a href="mailto:info@apex-pain.com">info@apex-pain.com</a>
                   </p>
                   <p>
                     <strong>Fax </strong> 1-888-355-6416

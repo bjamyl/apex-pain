@@ -68,6 +68,15 @@ export const servicesData: Service[] = [
     imageAlt: "sacroiliac-joint-fusion",
     videoId: 6,
   },
+    {
+    title: "Dorsal Root Ganglion Stimulation",
+    description:"A targeted stimulation therapy that delivers relief to specific nerves to relieve chronic, focal pain that hasn’t responded to other treatments.",
+    icon: <LuBrainCircuit size={30} className="text-2xl" />,
+    link: "/services/dorsal-root-ganglion-stimulation",
+    image: "/services/dorsal.jpg",
+    imageAlt: "dorsal-root-ganglion-stimulation",
+    videoId: 3,
+  },      
   {
     title: "Spinal Cord Stimulation",
     description:

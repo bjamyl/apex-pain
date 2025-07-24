@@ -91,6 +91,10 @@ export function NavMenu() {
                 title="Sacroiliac Joint Fusion"
                 href="/services"
               ></ListItem>
+              <ListItem
+                title="Dorsal Root Ganglion Stimulation"
+                href="/services"
+              ></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

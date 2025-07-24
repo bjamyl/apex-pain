@@ -27,19 +27,22 @@ export default function AccordionMenu({ toggleMenu }: AccordionProps) {
     { name: "Joint Injections", href: "/services" },
     { name: "Peripheral Nerve Stimulation", href: "/services" },
     { name: "Sacroiliac Joint Fusion", href: "/services" },
-    { name: "Minimally Invasive Lumbar Decompression(MILD)", href: "/services" },
+    {
+      name: "Minimally Invasive Lumbar Decompression(MILD)",
+      href: "/services",
+    },
     { name: "Basivertebral Nerve Ablation", href: "/services" },
-        { name: "Sacroiliac Joint Injection", href: "/services" },
-
+    { name: "Sacroiliac Joint Injection", href: "/services" },
+    { name: "Dorsal Root Ganglion Stimulation", href: "/services" },
   ];
-
 
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="services" className="border-none">
-        
         <AccordionTrigger className="px-6 hover:bg-gray-50 text-gray-700 text-base font-medium hover:no-underline">
-          <span className="pb-4 border-b border-b-gray-400 w-full">Services</span>
+          <span className="pb-4 border-b border-b-gray-400 w-full">
+            Services
+          </span>
         </AccordionTrigger>
         <AccordionContent className="pb-0">
           <div className="">
@@ -52,7 +55,9 @@ export default function AccordionMenu({ toggleMenu }: AccordionProps) {
                   toggleMenu();
                 }}
               >
-                <span className="py-4 border-b border-b-gray-400 w-full">{service.name}</span>
+                <span className="py-4 border-b border-b-gray-400 w-full">
+                  {service.name}
+                </span>
               </button>
             ))}
           </div>
