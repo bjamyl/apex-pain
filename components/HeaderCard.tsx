@@ -9,7 +9,7 @@ type HeaderCardProps = {
 
 export default function HeaderCard({ image, title, description }: HeaderCardProps) {
   return (
-    <div className="rounded-2xl shadow-md">
+    <div className="rounded-2xl shadow-md pb-5">
       <div className="relative w-full h-[400px] lg:h-[500px] overflow-hidden rounded-t-2xl">
         <Image src={image} fill alt="contact-image" className="object-cover" />
 

@@ -98,6 +98,18 @@ export function NavMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>News</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              <ListItem
+                title="Clinic Updates"
+                href="/clinic-updates"
+              ></ListItem>
+              <ListItem title="FAQ" href="/faq"></ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
         {/* <NavigationMenuItem>
           <Link href="/awareness" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>

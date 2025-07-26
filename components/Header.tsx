@@ -8,6 +8,7 @@ import AccordionMenu from "./AccordionMenu";
 import { useRouter } from "next/navigation";
 import DoctorsAccordionMenu from "./DoctorsAccordionMenu";
 import Link from "next/link";
+import NewsAccordionMenu from "./NewsAccordionMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -95,6 +96,8 @@ export default function Header() {
 
             {/* Services Accordion */}
             <AccordionMenu toggleMenu={toggleMenu} />
+            {/* News accordion */}
+            <NewsAccordionMenu toggleMenu={toggleMenu}/>
 
             {regularMenuItems.map((item, index) => (
               <button
