@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { MapPin, Phone, Mail, Clock, ChevronRight } from "lucide-react";
-
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -22,6 +22,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Link from "next/link";
+import { useState } from "react";
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
@@ -52,10 +53,41 @@ export default function ContactForm() {
       message: "",
     },
   });
+  const [loading, setLoading] = useState(false);
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    // Handle form submission here
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        console.log("Email sent!");
+        setLoading(false);
+        toast("Message sent successfully.");
+        form.reset({
+          fullName: "",
+          email: "",
+          phone: "",
+          needs: "",
+          message: "",
+        });
+      } else {
+        console.error("Failed to send email:", data.error);
+        setLoading(false);
+        toast("Failed to send message. Try again later.");
+      }
+    } catch (error) {
+      console.error("Unexpected error:", error);
+      setLoading(false);
+      toast("Failed to send message. Try again later.");
+    }
   }
 
   return (
@@ -102,7 +134,9 @@ export default function ContactForm() {
                     </h3>
                   </div>
                   <div className="ml-15 space-y-1 text-slate-600">
-                    <p>Call Support: <br /> +1 207-830-2739</p>
+                    <p>
+                      Call Support: <br /> +1 207-830-2739
+                    </p>
                   </div>
                 </div>
 
@@ -117,7 +151,9 @@ export default function ContactForm() {
                     </h3>
                   </div>
                   <div className="ml-15 space-y-1 text-slate-600">
-                    <p><a href="mailto:info@apex-pain.com">info@apex-pain.com</a></p>
+                    <p>
+                      <a href="mailto:info@apex-pain.com">info@apex-pain.com</a>
+                    </p>
                   </div>
                 </div>
 
@@ -144,7 +180,11 @@ export default function ContactForm() {
                   Follow Us:
                 </h3>
                 <div className="flex flex-wrap gap-4 text-slate-600">
-                  <Link target="_blank" href="https://www.facebook.com/apex.pain.me?mibextid=ZbWKwL" className="hover:text-slate-800 transition-colors">
+                  <Link
+                    target="_blank"
+                    href="https://www.facebook.com/apex.pain.me?mibextid=ZbWKwL"
+                    className="hover:text-slate-800 transition-colors"
+                  >
                     Facebook
                   </Link>
                 </div>
@@ -274,8 +314,14 @@ export default function ContactForm() {
                       type="submit"
                       className="h-14 rounded-none bg-defaultGreen px-8 text-base font-medium hover:bg-slate-700 transition-colors"
                     >
-                      Submit Message
-                      <ChevronRight className="ml-2 h-5 w-5" />
+                      {loading ? (
+                        <p>Sending your message...</p>
+                      ) : (
+                        <>
+                          <p>Submit Message</p>
+                          <ChevronRight className="ml-2 h-5 w-5" />
+                        </>
+                      )}
                     </Button>
                   </div>
                 </form>

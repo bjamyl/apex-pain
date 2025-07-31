@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 import Header from "@/components/Header";
 import { HeaderXl } from "@/components/HeaderXl";
@@ -184,6 +185,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${poppinsFont.className} antialiased`}>
+        <Toaster />
         <Header />
         <HeaderXl />
         <main id="main-content">{children}</main>

@@ -94,7 +94,7 @@ export default function FaqAccordion() {
         {
           item: "billing-1",
           question: "What insurance plans do you accept?",
-          answer: "We accept most commercial insurance plans and Medicare. We do not currently accept Medicaid or MaineCare. If you have specific questions about your coverage, our staff will be happy to help verify your benefits before your appointment.",
+          answer: "We accept most commercial insurance plans. We do not currently accept Medicare or Medicaid. If you have specific questions about your coverage, our staff will be happy to help verify your benefits before your appointment.",
         },
         {
           item: "billing-2",
