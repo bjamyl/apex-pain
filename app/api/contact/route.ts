@@ -341,7 +341,6 @@ const createEmailTemplate = (
             <!-- Action Buttons -->
             <div class="action-buttons">
                 <a href="mailto:${email}" class="btn btn-primary">Reply to Client</a>
-                <a href="tel:${phone}" class="btn btn-secondary">Call Client</a>
             </div>
             
             <!-- Timestamp -->

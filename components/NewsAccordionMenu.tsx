@@ -17,12 +17,12 @@ export default function NewsAccordionMenu({
   const router = useRouter();
   const newsLinks = [
     {
-      name: "Clinic Updates",
-      href: "/clinic-updates",
-    },
-    {
       name: "FAQ",
       href: "/faq",
+    },
+    {
+      name: "Clinic Updates",
+      href: "/clinic-updates",
     },
   ];
 
@@ -30,9 +30,7 @@ export default function NewsAccordionMenu({
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="services" className="border-none">
         <AccordionTrigger className="px-6 hover:bg-gray-50 text-gray-700 text-base font-medium hover:no-underline">
-          <span className="pb-4 border-b border-b-gray-400 w-full">
-            News
-          </span>
+          <span className="pb-4 border-b border-b-gray-400 w-full">News</span>
         </AccordionTrigger>
         <AccordionContent className="pb-0">
           <div className="">
