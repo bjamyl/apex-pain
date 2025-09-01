@@ -17,11 +17,11 @@ export function PhysiciansShowcase({ physicians }: PhysiciansShowcaseProps) {
     <div className="mx-4 my-20 overflow-hidden">
       <div className="py-8 lg:py-16 px-4 sm:px-6 lg:px-16">
         <div className="mb-12 lg:mb-16">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-defaultGreen leading-tight text-left mb-6 lg:mb-8">
+          <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-defaultGreen leading-tight text-left mb-6 lg:mb-8">
             Physicians, you know.
             <br />
             Care you trust.
-          </h1>
+          </h4>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed max-w-3xl">
             At Apex Interventional Pain Specialists, our goal is to reduce suffering from chronic pain and improve
             quality of life! We offer evidence based, cutting edge treatments to target pain along the entire spine,

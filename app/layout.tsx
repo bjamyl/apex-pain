@@ -18,20 +18,20 @@ export const metadata: Metadata = {
     template: "%s | Apex Interventional Pain Specialists",
   },
   description:
-    "Expert interventional pain management specialists providing comprehensive pain relief solutions. Advanced treatments for chronic pain, back pain, and joint pain. Located near you.",
+    "Expert interventional pain management specialists providing comprehensive pain relief solutions. Advanced treatments for chronic pain, back pain, and joint pain. Located in Bangor, ME.",
 
   // Open Graph (Facebook, LinkedIn, etc.)
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://apex-pain.vercel.app",
+    url: "https://apex-pain.com",
     siteName: "Apex Interventional Pain Specialists",
     title: "Apex Interventional Pain Specialists - Expert Pain Management",
     description:
       "Expert interventional pain management specialists providing comprehensive pain relief solutions.",
     images: [
       {
-        url: "https://apex-pain.vercel.app/og.png",
+        url: "https://apex-pain.com/og.png",
         width: 1200,
         height: 630,
         alt: "Apex Interventional Pain Specialists",
@@ -49,6 +49,20 @@ export const metadata: Metadata = {
     "pain clinic",
     "epidural injections",
     "nerve blocks",
+    "radiofrequency ablation",
+    "spinal cord stimulation",
+    "pain relief",
+    "pain therapy",
+    "pain doctor",
+    "pain medicine",
+    "pain management near me",
+    "minimally invasive pain treatments",
+    "sacroiliac joint fusion",
+    "dorsal root ganglion stimulation",
+    "peripheral nerve stimulation",
+    "kyphoplasty",
+    "MILD procedure",
+    "Basivertebral nerve ablation",
   ],
 
   authors: [{ name: "Apex Interventional Pain Specialists" }],
@@ -75,7 +89,7 @@ export const metadata: Metadata = {
 
   // Canonical URL
   alternates: {
-    canonical: "https://apex-pain.vercel.app", //
+    canonical: "https://apex-pain.com", //
   },
 
   // Additional metadata
@@ -124,7 +138,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta
           property="og:image"
-          content="https://apex-pain.vercel.app/og.png"
+          content="https://apex-pain.com/og.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -139,7 +153,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://apex-pain.vercel.app/og.png"
+          content="https://apex-pain.com/og.png"
         />
 
         {/* Structured Data - JSON-LD */}
@@ -152,9 +166,9 @@ export default function RootLayout({
               name: "Apex Interventional Pain Specialists",
               description:
                 "Expert interventional pain management specialists providing comprehensive pain relief solutions.",
-              url: "https://apex-pain.vercel.app",
-              logo: "https://apex-pain.vercel.app/apex-logo-white.png",
-              image: "https://apex-pain.vercel.app/og.png",
+              url: "https://apex-pain.com",
+              logo: "https://apex-pain.com/apex-logo-white.png",
+              image: "https://apex-pain.com/og.png",
               telephone: "207-830-2739",
               address: {
                 "@type": "PostalAddress",
@@ -178,8 +192,44 @@ export default function RootLayout({
                   "@type": "MedicalProcedure",
                   name: "Nerve Blocks",
                 },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Joint Injections",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Radiofrequency Ablation",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Sacroiliac Joint Fusion",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Dorsal Root Ganglion Stimulation",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Spinal Cord Stimulation",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Peripheral Nerve Stimulation",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Kyphoplasty",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Minimally Invasive Lumbar Decompression(MILD)",
+                },
+                {
+                  "@type": "MedicalProcedure",
+                  name: "Basivertebral Nerve Ablation-Intracept Procedure",
+                },
               ],
-              sameAs: ["https://facebook.com/yourpage"],
+              sameAs: ["https://facebook.com/apex.pain.me"],
             }),
           }}
         />

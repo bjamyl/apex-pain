@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Send, ArrowUp } from "lucide-react";
+import { Facebook, Send, ArrowUp, Heart } from "lucide-react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Outfit } from "next/font/google";
 
@@ -154,14 +154,13 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar - Only visible on desktop */}
-        <div className="border-t border-gray-400 mt-8 py-4 hidden lg:block">
+        <div className="border-t border-gray-400 mt-8 py-4">
           <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
-            <p>
+            <p className="text-center w-full">
               <span className="font-semibold">
                 Apex Interventional Pain Specialists
-              </span>{" "}
-              © 2025 – All Rights Reserved
+              </span> <br />
+              © 2025 – All Rights Reserved <br /> Proudly supporting Pain Awareness Month 2025
             </p>
           </div>
         </div>

@@ -8,6 +8,8 @@ import Testimonials from "@/components/Testimonials";
 import PartnersMarquee from "@/components/PartnersMarquee";
 import { PhysiciansShowcase } from "@/components/PhysiciansShowcase";
 import { title } from "process";
+import { PainAwarenessDialog } from "@/components/PainAwarenessDialog";
+import PainAwarenessSection from "@/components/PainAwarenessSection";
 
 const PoppinsFont = Outfit({
   subsets: ["latin"],
@@ -43,7 +45,9 @@ export default function Home() {
 ]
   return (
     <div className={`${PoppinsFont.className} antialiased bg-gray-300`}>
+      <PainAwarenessDialog/>
       <HeroSlider />
+      <PainAwarenessSection/>
       <PhysiciansShowcase physicians={physicians}/>
       <ServicesSection />
       <Location />

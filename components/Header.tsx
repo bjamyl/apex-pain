@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import DoctorsAccordionMenu from "./DoctorsAccordionMenu";
 import Link from "next/link";
 import NewsAccordionMenu from "./NewsAccordionMenu";
+import PainAwarenessBanner from "./PainAwarenessBanner";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,6 +45,8 @@ export default function Header() {
           />
         </div>
       </header>
+      <PainAwarenessBanner/>
+
 
       {/* Overlay */}
       <div
