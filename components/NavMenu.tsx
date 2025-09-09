@@ -119,6 +119,13 @@ export function NavMenu() {
         </NavigationMenuItem> */}
 
         <NavigationMenuItem>
+          <Link href="/celebrating-pain-awareness" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Pain Awareness Month 2025
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact

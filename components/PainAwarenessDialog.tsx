@@ -109,11 +109,6 @@ export function PainAwarenessDialog() {
               </Button>
             </div>
 
-            {/* Small disclaimer */}
-            <p className="text-xs text-muted-foreground text-center mt-4 opacity-70">
-              This message will only appear once. You can always find Pain Awareness Month information throughout our
-              website.
-            </p>
           </div>
         </div>
       </DialogContent>

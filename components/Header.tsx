@@ -22,6 +22,7 @@ export default function Header() {
 
   const regularMenuItems = [
     // { name: "Awareness", href: "/awareness" },
+    { name: "Pain Awareness Month 2025", href: "/celebrating-pain-awareness" },
     { name: "Contact", href: "/contact" },
   ];
 

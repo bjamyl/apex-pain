@@ -5,6 +5,7 @@ import { HoverCard } from "./HoverCard";
 import { Clock, Users, Shield } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function PainAwarenessSection() {
   return (
@@ -56,9 +57,11 @@ export default function PainAwarenessSection() {
               className="object-cover rounded-2xl"
             />
           </div>
-          <Button className="bg-purple-700 w-1/2 mt-5 xl:mt-0">
-            Learn More
-          </Button>
+          <Link href="/celebrating-pain-awareness">
+            <Button className="bg-purple-700 w-1/2 mt-5 xl:mt-0 rounded-none">
+              Learn More
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
